@@ -1,0 +1,2658 @@
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<!-- DUNELM CSS	-->		  
+			  
+<style>
+
+
+button {
+	font-size: .75em;
+	margin: 0;
+	-webkit-appearance: button
+}
+button {
+	text-transform: none
+}
+button[disabled] {
+	cursor: default
+}
+button::-moz-focus-inner {
+border:0;
+padding:0
+}
+[hidden] {
+	display: none
+}
+img {
+	border: 0;
+	max-width: 100%;
+	vertical-align: middle
+}
+header, main, section {
+	display: block
+}
+body, h5, h6, html, ul {
+	margin: 0;
+	padding: 0
+}
+h1, h2, h3, h4 {
+	padding: 0
+}
+ul {
+	list-style: none
+}
+p {
+	font-family: Nunito Sans;	
+}
+strong {
+	font-weight: 700
+}
+em {
+	font-style: italic
+}
+h1, h2, h3 {
+	font-size: 100%
+}
+h1, h2, h3, h4 {
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-weight: 700;
+	margin: 0;
+	text-rendering: optimizelegibility
+}
+p {
+	font-size: .875em
+}
+p {
+	margin: 0 0 20px
+}
+a {
+	text-decoration: underline;
+	color: #3f9c35
+}
+a:hover {
+	color: #32682a
+}
+a:active, a:hover {
+	outline: 0
+}
+a:focus {
+	outline: thin dotted;
+	color: #32682a
+}
+a:visited {
+	color: #3f9c35
+}
+.no-touch a[href^=tel] {
+	color: inherit;
+	text-decoration: none;
+	pointer-events: none;
+	cursor: text
+}
+
+@media only screen and (min-width:680px) {
+.touch a[href^=tel] {
+	color: inherit;
+	text-decoration: none;
+	pointer-events: none
+}
+}
+a.icon-link, ul a {
+	text-decoration: none
+}
+a.icon-link span:first-child {
+	margin-right: .5em
+}
+a.icon-link span:last-child {
+	text-decoration: underline
+}
+::-moz-selection {
+background:#50c044;
+text-shadow:none
+}
+::selection {
+	background: #50c044;
+	text-shadow: none
+}
+* {
+	box-sizing: border-box
+}
+html {
+	background: #fff;
+	font-size: 100%;
+	-webkit-overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-text-size-adjust: 100%;
+	-webkit-font-smoothing: antialiased;
+	-ms-text-size-adjust: 100%;
+	overflow-x: hidden
+}
+body {
+	width: 100%;
+	background-color: transparent;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 1em;
+	line-height: 20px;
+	color: #333
+}
+::-webkit-input-placeholder {
+-webkit-font-smoothing:antialiased
+}
+:-moz-placeholder, ::-moz-placeholder {
+-webkit-font-smoothing:antialiased
+}
+:-ms-input-placeholder {
+-webkit-font-smoothing:antialiased
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%
+}
+.hide {
+	display: none
+}
+.last {
+	margin-bottom: 0
+}
+.no-padding-top {
+	padding-top: 0
+}
+.grid-full, .l-content {
+	width: 100%
+}
+.wrap {
+	padding: 0 .625em;
+	overflow: visible
+}
+.wrap::after, .wrap::before {
+	content: "";
+	display: table
+}
+.wrap::after {
+	clear: both;
+	width: 100%
+}
+
+@media screen and (min-width:580px) {
+.wrap {
+	margin: 0 auto
+}
+}
+
+@media screen and (min-width:940px) {
+.wrap {
+	max-width: 1200px
+}
+}
+.wrap, header {
+	min-width: 20em
+}
+header:not(.header) .wrap {
+	padding: 0
+}
+section {
+	overflow: hidden
+}
+.grid-wrap::after, .grid-wrap::before {
+	content: "";
+	display: table
+}
+.grid-wrap::after {
+	clear: both;
+	width: 100%
+}
+
+@media screen and (min-width:580px) {
+.l-content {
+	width: 50%
+}
+}
+
+@media screen and (min-width:650px) {
+.l-content {
+	width: 60%
+}
+}
+
+@media screen and (min-width:810px) {
+.l-content {
+	width: 66.66667%
+}
+}
+
+@media screen and (min-width:940px) {
+.l-content {
+	width: 75%
+}
+}
+.header {
+	padding-top: .625em
+}
+
+@media only screen and (min-width:810px) {
+.header {
+	padding-top: .3125em
+}
+}
+
+@media screen and (max-width:810px) {
+.header {
+	background-color: #fff;
+	border-bottom: 1px solid #3f9c35;
+	padding-bottom: .625em;
+	position: fixed;
+	width: 100%;
+	z-index: 20
+}
+.is-fixed&gt;
+.header {
+	position: static
+}
+}
+.header__wrap {
+	min-height: 55px;
+	padding: 0
+}
+.header__items {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-justify-content: space-between;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	height: 55px
+}
+
+@media screen and (max-width:810px) {
+.header__items__item--help {
+	display: none
+}
+}
+.header__items__item {
+	padding: 0 .625em
+}
+
+@media only screen and (max-width:480px) {
+.header__items__item {
+	min-width: 3.75em;
+	padding: 0
+}
+}
+
+@media only screen and (min-width:810px) {
+.header__items__item--menu {
+	display: none
+}
+}
+.header__items__button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	color: #3f9c35;
+	cursor: pointer;
+	display: block;
+	font-family: inherit;
+	font-size: .875em;
+	font-weight: inherit;
+	line-height: inherit;
+	margin: 0 auto;
+	padding: 0;
+	position: relative
+}
+.header__items__button::-moz-focus-inner {
+border:none;
+padding:0
+}
+.header__items__button:active {
+	box-shadow: none
+}
+.header__items__button:hover {
+	color: #3f9c35
+}
+.header__items__icon, .header__items__text {
+	display: block;
+	text-align: center
+}
+.header__items__icon {
+	color: inherit;
+	fill: currentColor;
+	height: 2em;
+	margin: 0 auto;
+	width: 2.03125em
+}
+.header__items__text {
+	font-weight: 700;
+	white-space: nowrap
+}
+
+@media only screen and (max-width:320px) {
+.header__items__text {
+	font-size: .75em
+}
+}
+
+@media only screen and (min-width:810px) {
+.header__items__text {
+	font-size: .75em
+}
+}
+.l-footer-menu .is-open h4, .l-footer-menu .is-open strong {
+	position: relative
+}
+main {
+	padding: .5em 0 1.25em
+}
+footer {
+	display: block;
+	background: #f2f2f2;
+	border-bottom: 10px solid #3f9c35;
+	border-top: 1px dashed #e1e1e1
+}
+
+
+.menu-header::after {
+	clear: both;
+	width: 100%
+}
+.menu-header a {
+	display: block;
+	text-decoration: none
+}
+.inner {
+	padding: .625em
+}
+
+@media screen and (min-width:650px) {
+.inner {
+	padding: 1.25em
+}
+}
+.media::after, .media::before {
+	content: "";
+	display: table
+}
+.media::after {
+	clear: both;
+	width: 100%
+}
+.media .media-img {
+	float: left;
+	margin-right: .625em
+}
+.media .media-body {
+	overflow: hidden
+}
+
+
+.product-info {
+	margin-top: 3.5em
+}
+
+@media only screen and (max-width:580px) {
+.touch [name=l-search-results__sort] {
+	height: 28px;
+	float: left;
+	margin: 0 .625em
+}
+}
+
+@media only screen and (min-width:321px) {
+.touch [name=l-search-results__sort] {
+	max-width: 150px
+}
+}
+.facet-header {
+	position: relative;
+	border-top: 1px dashed #ededed
+}
+.product-image {
+	display: block;
+	position: relative;
+	border: 1px solid #cccccd;
+	overflow: hidden;
+	max-width: 300px
+}
+.product-image&gt;
+button, .product-image&gt;
+div {
+	position: absolute
+}
+.buying-guide__main__wrap {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex
+}
+.buying-guide__content {
+	padding-left: 1.25em;
+	width: 100%;
+	max-width: 58em
+}
+
+@media only screen and (max-width:580px) {
+.buying-guide__content {
+	padding-left: 0
+}
+}
+.buying-guide .image-segment__hero {
+	border: 1px solid #cfcfcf
+}
+.buying-guide .image-segment__block img, .buying-guide .image-segment__hero img {
+	display: block
+}
+.buying-guide .image-segment__block, .buying-guide .image-segment__hero {
+	position: relative;
+	margin-bottom: 1.25em
+}
+.buying-guide table {
+	width: 100%;
+	table-layout: fixed
+}
+.category__menu {
+	margin-bottom: 1.25em
+}
+.category__menu h3, .category__menu&gt;
+a {
+	width: 100%;
+	color: #333;
+	font-family: Open Sans, Arial, "Helvetica Neue", Helvetica, sans-serif
+}
+.category__menu h3 {
+	margin-bottom: .625em;
+	font-weight: 700;
+	border-width: 0 0 1px;
+	border-style: dashed;
+	border-color: #ccc;
+	display: inline-block;
+	padding: 8px 1.25em 15px 0;
+	font-size: 1.125em
+}
+.category__menu&gt;
+a {
+	display: block;
+	padding: 2px 6px 2px 0;
+	font-size: .875em;
+	text-decoration: none
+}
+.category__menu&gt;
+a:hover {
+	text-decoration: underline
+}
+.category__block__container {
+	margin-bottom: 2.5em
+}
+.category__block__container::after, .category__block__container::before {
+	content: "";
+	display: table
+}
+.category__block__container::after {
+	clear: both;
+	width: 100%
+}
+.category__block__container&gt;
+section {
+	float: left
+}
+.category__content {
+	float: left;
+	width: 80%;
+	padding-left: 1.25em;
+	border-left: 1px solid #ccc
+}
+
+@media only screen and (max-width:650px) {
+.category__content {
+	width: 100%;
+	padding-left: 0
+}
+}
+.category__block {
+	float: left;
+	text-decoration: none
+}
+.category__block img {
+	display: block;
+	width: 100%;
+	height: auto
+}
+.category__block h4 {
+	transition: all .2s ease
+}
+.category__block:hover h4 {
+	color: #3f9c35
+}
+.category__block p {
+	margin: 0
+}
+.category__block p+p {
+	margin-top: 1.25em
+}
+.category__block-cta {
+	position: relative;
+	background-color: #ccc;
+	padding: 1.25em
+}
+.category__block-cta h3 {
+	font-size: 1.5em;
+	margin-bottom: .625em
+}
+.category__block-cta p {
+	margin-bottom: 1.25em
+}
+.category__block h4 {
+	font-size: 1em;
+	font-weight: 700
+}
+.category [id^=promo] {
+	margin-bottom: 1.25em
+}
+@-moz-document url-prefix() {
+.homepage__slider .slick-dots {
+bottom:16px
+}
+}
+.clear_both {
+	display: block;
+	clear: both
+}
+
+@-moz-document url-prefix() {
+.collection__page .collection__footer .collection__footer__container .dots .pagearrow {
+margin-top:3px
+}
+}
+header .wrap {
+	position: relative
+}
+.menu-header {
+	float: right
+}
+.menu-header li {
+	border-left: 1px solid #bbb
+}
+
+@media only screen and (max-width:1100px) {
+.menu-header li:last-child span {
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0
+}
+}
+
+@media screen and (min-width:320px) {
+.menu-header li:last-child span {
+	margin-left: .25em
+}
+}
+
+@media only screen and (max-width:1100px) {
+.menu-header li:not(:last-child) span {
+	overflow: hidden;
+	position: absolute;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0
+}
+}
+.menu-header a {
+	font-size: .875em;
+	line-height: 3.14286;
+	padding: 0 1.25em;
+	border-left: 1px solid #fff;
+	color: #333
+}
+.menu-header a:focus, .menu-header a:hover {
+	background: #ddd
+}
+
+@media screen and (min-width:940px) {
+.menu-header a span {
+	margin-left: .25em
+}
+}
+.menu-header-mobile {
+	clear: both;
+	background: #555;
+	padding: 0 .5em
+}
+.menu-header-mobile::after, .menu-header-mobile::before {
+	content: "";
+	display: table
+}
+.menu-header-mobile::after {
+	clear: both;
+	width: 100%
+}
+.menu-header-mobile li {
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	border-left: 1px solid #fff
+}
+.menu-header-mobile li:last-child {
+	border-right: 1px solid #fff
+}
+.menu-header-mobile a {
+	display: block;
+	color: #fff;
+	padding: .625em 0;
+	position: relative
+}
+.menu-header-mobile span {
+	display: block
+}
+
+@media screen and (min-width:650px) {
+.menu-header-mobile {
+	display: none
+}
+}
+
+</style>	
+
+
+<!-- MY CSS	-->
+
+<style>
+iframe {
+	min-width: 100%!important; 
+    width: 100px!important; 
+    *width: 100%!important; 
+ }
+/* -------------------------------- 
+FULL WIDTHS OVERWRITES
+-------------------------------- */
+
+.wrap {
+	max-width: 100%;
+	padding: 0;
+}
+.header__items, .l-footer-menu, .l-footer-logos > .wrap {
+	margin: 0 auto;
+	max-width: 1200px;
+}
+
+
+
+/* -------------------------------- 
+GENERAL AND TITLES
+-------------------------------- */
+#hide-img-mobile {
+	display: block;
+}
+#hide-img-desktop {
+	display: none;
+}
+.sleep-hub-section a {
+		text-decoration: none;
+}
+.sleep-hub-section-container {
+	width: 100%;
+	float: left;
+	padding: 0 20px;
+}
+.sleep-hub-section {
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	padding: 25px 0 30px;
+	max-width: 1200px;
+}
+.sleep-hub-section h2 {
+    font-family: Patua One;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 33px;
+	margin-bottom: 14px;
+}
+.sleep-hub-section p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 23px;
+	margin-bottom: 0;
+}
+.sleep-hub-section p br {
+	display: block;
+}
+.sleep-hub-section-white {
+	background-color: #fff;
+	color: #7e7877;
+}
+.sleep-hub-section-light-blue {
+	background-color: #cfdde9;
+	color: #7e7877;
+}
+.sleep-hub-section-dark-blue {
+	background-color: #7997af;
+	color: #fff;
+}
+.sleep-hub-cta strong {
+	font-family: Nunito Sans;
+	text-transform: uppercase;
+	padding: 10px 16px;
+	font-size: 16px;
+	line-height: 20px;
+	letter-spacing: 0.075em;
+}
+.sleep-hub-cta-hotspots {
+	margin: 10px 0 20px;
+}
+.sleep-hub-cta-hotspots strong {
+	background-color: #fff;
+	color: #333;
+}
+.sleep-hub-cta-kids-quote {
+	margin: 40px 0;
+}
+.sleep-hub-cta-kids-quote strong {
+	border: 1px solid #fff;
+	color: #fff;
+}
+.sleep-hub-cta-kids-quote strong br {
+	display: none;
+}
+	
+
+
+
+/* -------------------------------- 
+HERO
+-------------------------------- */
+  
+.sleep-hub-hero {
+	background: url("images/sleep-hub-wk37-hero.jpg?qlt=75") no-repeat center center / cover;
+	text-align: center;
+	padding: 100px 20px;
+	max-width: 2100px;
+	margin: 0 auto;
+	width: 100%;
+}
+.sleep-hub-hero h1 {
+	font-family: Nunito Sans;
+	color: #fff;
+	font-size: 78px;
+	line-height: 83px;
+	font-weight: 300;
+}
+.sleep-hub-hero h1 strong {
+	font-family: Patua One;
+	font-size: 106px;
+	font-weight: 300;
+}
+  
+  
+ 
+ 
+ 
+ 
+/* -------------------------------- 
+KEEPING AWAKE
+-------------------------------- */
+ 
+.sleep-hub-keeping-awake-desktop-container {
+    float: left;
+    margin: 12px 0 25px;
+    width: 100%;
+}
+.sleep-hub-keeping-awake-mobile-container {
+	display: none;
+}
+.sleep-hub-keeping-awake-column {
+    border: 1px solid #fff;
+    float: left;
+    margin: 0 1%;
+    padding: 40px 10px 0;
+    width: 23%;
+}
+.sleep-hub-keeping-awake-column h3 {
+    color: #fff;
+    font-family: Patua One;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 26px;
+    margin-bottom: 10px;
+}
+.sleep-hub-keeping-awake-column-two-lines h3 {
+    margin-top: -13px!important;
+}
+.sleep-hub-keeping-awake-column p {
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.sleep-hub-keeping-awake-column-two-lines p {
+    margin-bottom: 27px!important;
+}
+  
+  
+  
+.sleep-hub-keeping-awake-column p br {
+	display: none;
+}
+.sleep-hub-keeping-awake-column h4 {
+	font-family: Nunito Sans;
+    background-color: #fff;
+    color: #7e7877;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    margin-bottom: 12px;
+    padding: 10px;
+}
+ 
+ 
+ 
+   
+/* -------------------------------- 
+HOTSPOT GENERAL
+-------------------------------- */
+
+.hotspot-outer-container {
+	width: 100%;
+	margin: 20px auto 30px;
+}
+.hotspot-outer-container:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hotspot-inner-container {
+	display: inline-block;
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	overflow: hidden;
+}
+
+
+
+ 
+/* -------------------------------- 
+HOTSPOT FLIP COVER BUTTON
+-------------------------------- */
+
+.hs-flip-covers-buttton {
+    background-color: rgba(255, 255, 255, 0.85);
+    bottom: 0;
+    color: #465b6c;
+    cursor: pointer;
+    font-size: 18px;
+    letter-spacing: 0.075em;
+    margin: 0;
+    padding: 14px 30px;
+    position: absolute;
+    right: 0;
+    text-transform: uppercase;
+}
+.hs-flip-covers-buttton img {
+    margin-left: 10px;
+    vertical-align: -10px;
+    width: 35px;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+
+.hs-flip-covers-buttton-stop-spin img { animation: none; }
+
+.hs-flip-cover-outside img { animation: none; }
+
+
+
+  
+/* -------------------------------- 
+HOTSPOT OUTER CONTENT
+-------------------------------- */
+
+.hs-img-replace {
+	position: absolute;
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	cursor: pointer;
+}
+/* hotspot plus icon shape */
+.hs-single-point {
+	border-radius: 50%;
+}
+.hs-single-point > a {
+  position: relative;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: inherit;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  -webkit-transition: background-color 0.2s;
+  -moz-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+.hs-single-point > a::after, .hs-single-point > a:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  background-color: #7e7877;
+  -webkit-transition-property: -webkit-transform;
+  -moz-transition-property: -moz-transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+.hs-single-point > a::after {
+  height: 2px;
+  width: 12px;
+}
+.hs-single-point > a::before {
+  height: 12px;
+  width: 2px;
+}
+
+/* hotspot open plus colour */
+.hs-single-point.is-open > a::after, .hs-single-point.is-open > a::before {
+	background-color: #ffffff;
+}  
+/* hotspot open circle colour */
+.hs-single-point.is-open > a {
+	background-color: #7997af;
+} 
+  
+/* plus twist animation */
+.hs-single-point.is-open > a::after, .hs-single-point.is-open > a::before {
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  -o-transform: translateX(-50%) translateY(-50%) rotate(135deg);
+  transform: translateX(-50%) translateY(-50%) rotate(135deg);
+}
+
+/* info box functionality */
+.hs-single-point.is-open .hs-more-info {
+	z-index:3;
+	text-align:center;
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: opacity 0.3s 0s, visibility 0s 0s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+	-moz-transition: opacity 0.3s 0s, visibility 0s 0s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+	transition: opacity 0.3s 0s, visibility 0s 0s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+  
+ /* hotspot visited plus colour */
+.hs-single-point.visited > a::after, .hs-single-point.visited > a::before {
+	background-color: #ffffff;
+} 
+/* hotspot visited circle colour */
+.hs-single-point.visited > a {
+  background-color: #7e7877;
+}
+
+
+/* hotspot pulse effect */
+ 
+@keyframes shadow-pulse {
+     0% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.4);
+     }
+       50% {
+          box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+     }
+     100% {
+          box-shadow: 0 0 0 30px rgba(0, 0, 0, 0);
+     }
+}
+
+.hs-img-replace {
+	animation: shadow-pulse 1.75s infinite;
+}
+.hs-single-point.is-open > .hs-img-replace {
+	animation: none;
+}
+.hs-single-point.visited > .hs-img-replace {
+	animation: none;
+}
+
+
+/*
+
+@-webkit-keyframes hs-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 1);
+  }
+  25% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.75);
+  }
+  50% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.5);
+  }
+  75% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.25);
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0);
+  }
+}
+
+@-moz-keyframes hs-pulse {
+  0% {
+    -moz-transform: scale(1);
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 1);
+  }
+  25% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.75);
+  }
+  50% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.5);
+  }
+  75% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.25);
+  }
+  100% {
+    -moz-transform: scale(2.5);
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0);
+  }
+}
+
+@keyframes hs-pulse {
+  0% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 1);
+  }
+  25% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.75);
+  }
+  50% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.5);
+  }
+  75% {
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0.25);
+  }
+  100% {
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+    transform: scale(2.5);
+    box-shadow: inset 15px 15px 15px 15px rgba(158, 179, 197, 0);
+  }
+
+}
+
+*/
+
+
+  
+  
+
+/* -------------------------------- 
+HOTSPOT POSITIONS - ADULT
+-------------------------------- */
+
+/* blinds */
+.adult-bedroom-hs-one {
+    left: 29%;
+    top: 13%;
+}
+/* clock */
+.adult-bedroom-hs-two {
+    left: 33%;
+    top: 61%;
+}
+/* pillow */
+.adult-bedroom-hs-three {
+    right: 46%;
+    top: 49%;
+}
+/* neautral colours */
+.adult-bedroom-hs-four {
+    right: 37%;
+    top: 72%;
+}
+/* diffuser */
+.adult-bedroom-hs-five {
+    right: 25%;
+    top: 14%;
+}
+
+
+/* -------------------------------- 
+HOTSPOT POSITIONS - KIDS
+-------------------------------- */
+
+/* stories */
+.kids-bedroom-hs-one {
+    bottom: 41%;
+    left: 36%;
+}
+/* bedding */
+.kids-bedroom-hs-two {
+    bottom: 25%;
+    left: 46%;
+}
+/* blinds */
+.kids-bedroom-hs-three {
+    right: 49%;
+    top: 15%;
+}
+/* light */
+.kids-bedroom-hs-four {
+    right: 41%;
+    top: 45%;
+}
+/* wardrobe */
+.kids-bedroom-hs-five {
+    right: 17%;
+    top: 41%;
+}
+	
+
+
+/* -------------------------------- 
+HOTSPOT INNER CONTENT
+-------------------------------- */
+
+ .hs-more-info {
+	height: 700px;
+	width: 35%;
+	height: 100%;
+	padding: 70px 30px 30px;
+ }
+.hs-more-info h3 {
+	text-align: left;
+    color: #7997af;
+    font-family: Patua One;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 26px;
+	margin-bottom: 15px;
+}
+.hs-more-info h4 {
+	font-family: Nunito Sans;
+	text-align: left;
+    color: #333;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 21px;
+    margin-bottom: 40px;
+}
+.hs-more-info-circle-img {
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 30px;
+    overflow: hidden;
+    position: relative;
+    width: 90%;
+}
+.hs-more-info-circle-img p {
+    background-color: #fff;
+    bottom: 0;
+	width: 100%;
+    color: #333;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 0;
+    padding: 10px;
+    position: absolute;
+}
+.hs-more-info-circle-img p strong {
+	display: block;	
+}
+.hs-more-info h5 {
+	font-family: Nunito Sans;
+    background-color: #7997af;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0.075em;
+    padding: 10px;
+    text-transform: uppercase;
+}
+.hs-close-info {
+	color: #333;
+    background-color: #cfdde9;
+    margin: 7px;
+    padding: 7px 12px;
+    position: fixed;
+    right: 0;
+    text-decoration: none;
+	cursor: pointer;
+    top: 0;
+}
+.hs-close-info:hover {
+	color: #333;
+}
+.hs-close-info span {
+	text-decoration: none;
+}
+.hs-single-point .hs-more-info {
+ position: absolute;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  top: 0;
+  z-index: 4;
+  -webkit-overflow-scrolling: touch;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+background-color: rgba(255, 255, 255, 0.9);
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  -ms-transform: scale(0.8);
+  -o-transform: scale(0.8);
+  transform: scale(0.8);
+  -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s, -webkit-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s, -moz-transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+  transition: opacity 0.3s 0s, visibility 0s 0.3s, transform 0.3s 0s, top 0.3s 0s, bottom 0.3s 0s, left 0.3s 0s, right 0.3s 0s;
+}
+.hs-more-info-right {
+	right: 0;
+}
+.hs-more-info-left {
+	left: 0;
+}
+
+
+
+
+/* -------------------------------- 
+KIDS FAMILY SPOT
+-------------------------------- */
+
+.sleep-hub-kids-quote-container {
+	width: 90%;
+	margin-left: 2.5%;
+	margin-right: 7.5%;
+}
+.sleep-hub-kids-quote-image {
+	float: left;
+	width: 30%;
+	position: relative;
+}
+.sleep-hub-kids-quote-image p {
+    background-color: #3f9c35;
+    color: #fff;
+    font-family: Patua One;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 7px 10px;
+    position: absolute;
+    top: 12px;
+}
+.sleep-hub-kids-quote-image img {
+	width: 300px;
+	padding-left: 5%;
+}
+.sleep-hub-kids-quote-text {
+	float: left;
+	width: 65%;
+	margin-left: 5%;
+	text-align: left;
+}
+.sleep-hub-kids-quote-text h3 {
+	font-family: Patua One;
+	font-size: 22px;
+	font-weight: 300;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+.sleep-hub-kids-quote-text p {
+	font-size: 24px;
+	font-weight: 200;
+	line-height: 31px;
+	margin-bottom: 8px;
+}
+.sleep-hub-kids-quote-text p span:first-child {
+	margin-right: 5px;
+}
+.sleep-hub-kids-quote-text p span:last-child {
+	margin-left: 5px;
+}
+.sleep-hub-kids-quote-text p span {
+	bottom: 0;
+	font-size: 40px;
+	font-weight: 900;
+	vertical-align: middle;
+}
+.sleep-hub-kids-quote-text h4 {
+	font-family: Nunito Sans;
+	font-size: 18px;
+}
+
+
+
+
+
+  
+  
+/* -------------------------------- 
+SLEEP BY CATEGORY
+-------------------------------- */
+
+.sleep-hub-more-categories {
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}
+.sleep-hub-more-categories h4 {
+	font-family: Nunito Sans;
+	display: inline-block;
+	color: #7e7877;
+	font-size: 16px;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: 0.075em;
+	background-color: #fff;
+	width: 20%;
+	padding: 12px 10px;
+	margin: 10px;
+}
+  
+  
+  
+
+/* -------------------------------- 
+BLOG SECTION
+-------------------------------- */
+
+.sleep-hub-blog-row {
+    float: left;
+    margin: 10px 0 30px;
+    width: 100%;
+}
+.sleep-hub-blog-segment {
+    float: left;
+    margin: 0 1%;
+    width: 23%;
+}
+.sleep-hub-blog-segment-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 8px;
+}	
+.sleep-hub-blog-segment a {
+    color:#333333;
+}
+.sleep-hub-blog-segment p {
+    font-size: 16px;
+	line-height: 21px;
+}
+.sleep-hub-blog-segment h4 {
+	font-family: Nunito Sans;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 0.075em;
+    text-transform: uppercase;
+}
+	
+@media only screen and (max-width: 660px) {
+	.sleep-hub-blog-segment {
+		width: 48%;
+		margin-bottom: 25px;
+	}
+}
+	
+@media only screen and (max-width: 400px) {
+	.sleep-hub-blog-segment {
+		width: 98%;
+	}
+}
+
+  
+ 
+ 
+ 
+ 
+ 
+  
+ 
+@media screen and (max-width: 1080px) {
+
+/* -------------------------------- 
+HOTSPOTS
+-------------------------------- */
+
+
+.hs-more-info {
+    padding: 40px 25px 20px;
+}
+.hs-more-info h3 {
+    margin-bottom: 8px;
+}
+.hs-more-info h4 {
+	font-family: Nunito Sans;
+    font-size: 1.6vw;
+    line-height: 2.15vw;
+	margin-bottom: 10px;
+}
+.hs-more-info-circle-img {
+    margin-bottom: 15px;
+}
+.hs-more-info-circle-img p {
+    font-size: 1.35vw;
+    line-height: 1.8vw;
+}
+
+  
+/* -------------------------------- 
+SLEEP BY CATEGORY
+-------------------------------- */
+.sleep-hub-more-categories {
+    width: 100%;
+}
+
+
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+@media screen and (max-width: 810px) {
+
+/* -------------------------------- 
+HERO
+-------------------------------- */
+  
+.sleep-hub-hero {
+    padding: 70px 20px;
+}
+.sleep-hub-hero h1 {
+    font-size: 50px;
+    line-height: 54px;
+}
+.sleep-hub-hero h1 strong {
+    font-size: 72px;
+}
+
+
+
+/* -------------------------------- 
+GENERAL AND TITLES
+-------------------------------- */
+
+.sleep-hub-section h2 {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 10px;
+}
+.sleep-hub-section p {
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 21px;
+    margin-bottom: 0;
+}
+.sleep-hub-section p br {
+    display: none;
+}
+
+
+
+
+
+
+/* -------------------------------- 
+KEEPING AWAKE
+-------------------------------- */
+
+.sleep-hub-keeping-awake-column {
+    padding: 30px 10px 0;
+}
+.sleep-hub-keeping-awake-column h3 {
+    font-size: 20px;
+	  line-height: 22px;
+    margin-bottom: 8px;
+}
+.sleep-hub-keeping-awake-column-two-lines h3 {
+    margin-top: -12px!important;
+}
+.sleep-hub-keeping-awake-column p {
+    font-size: 15px;
+	  line-height: 19px;
+    margin-bottom: 30px;
+}
+.sleep-hub-keeping-awake-column-two-lines p {
+    margin-bottom: 20px!important;
+}
+.sleep-hub-keeping-awake-column p br {
+    display: block;
+}
+
+
+
+
+
+/* -------------------------------- 
+HOTSPOTS
+-------------------------------- */
+.hs-more-info {
+    width: 45%;
+    padding: 45px 20px 20px;
+}
+.hs-more-info h3 {
+    font-size: 18px;
+    line-height: 23px;
+}
+.hs-more-info h4 {
+    font-size: 14px;
+    line-height: 19px;
+}
+.hs-more-info h5 {
+    font-size: 14px;
+    padding: 7px;
+}
+.hs-more-info-circle-img {
+    border-radius: 0;
+    width: 100%;
+}
+.hs-more-info-circle-img p {
+    font-size: 14px;
+    line-height: 19px;
+    margin-bottom: 0;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0);
+}
+.hs-more-info-circle-img p br {
+	display: block;	
+}
+.hs-more-info-circle-img img {
+	display: none;
+}
+
+
+.hs-flip-covers-buttton {
+    font-size: 16px;
+    padding: 10px 20px;
+}
+.hs-flip-covers-buttton img {
+     width: 25px;
+	 vertical-align: -6px;
+}
+
+
+
+
+
+/* -------------------------------- 
+KIDS FAMILY SPOT
+-------------------------------- */
+
+.sleep-hub-kids-quote-text p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 25px;
+    margin-bottom: 6px;
+}
+
+
+  
+/* -------------------------------- 
+SLEEP BY CATEGORY
+-------------------------------- */
+.sleep-hub-more-categories h4 {
+    font-size: 14px;
+    padding: 12px 7px;
+    width: 21%;
+}
+
+
+}
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+@media screen and (max-width: 650px) {
+
+/* -------------------------------- 
+GENERAL AND TITLES
+-------------------------------- */
+#hide-img-mobile {
+	display: none;
+}
+#hide-img-desktop {
+	display: block;
+}
+
+
+.sleep-hub-cta-hotspots {
+	background-color: #fff;
+    padding: 8px 15px;
+    width: 100%;
+}
+.sleep-hub-cta-hotspots strong {
+	padding: 0;
+}
+.sleep-hub-cta-kids-quote {
+	border: 1px solid #fff;
+	padding: 8px 15px;
+	width: 100%;
+	    margin: 25px 0;
+}
+.sleep-hub-cta-kids-quote strong {
+    border: none;
+    padding: 0;
+}
+
+  
+  
+
+/* -------------------------------- 
+KEEPING AWAKE
+-------------------------------- */
+ 
+.sleep-hub-keeping-awake-desktop-container {
+	display: none;
+}
+.sleep-hub-keeping-awake-mobile-container {
+	display: block;
+}
+ 
+ 
+ 
+/* -------------------------------- 
+HOTSPOTS
+-------------------------------- */
+
+ .hs-more-info {
+    height: auto;
+    width: 100%;
+}
+ .hs-close-info u {
+	 display: none;
+ }
+.hs-more-info {
+    padding: 20px;
+}
+.hs-more-info-circle-img p {
+    padding: 0;
+}
+.hs-more-info-circle-img {
+    margin-bottom: 10px;
+}
+.hs-flip-covers-buttton {
+	width: 100%;
+    font-size: 14px;
+    padding: 10px 15px;
+}
+.hs-flip-covers-buttton img {
+    vertical-align: -5px;
+    width: 20px;
+    margin-left: 5px;
+}
+ 
+ 
+
+
+
+/* -------------------------------- 
+HOTSPOT POSITIONS - ADULT
+-------------------------------- */
+
+/* blinds */
+.adult-bedroom-hs-one {
+    left: 20%;
+    top: 9%;
+}
+/* clock */
+.adult-bedroom-hs-two {
+    left: 26%;
+    top: 54%;
+}
+/* pillow */
+.adult-bedroom-hs-three {
+    right: 46%;
+    top: 45%;
+}
+/* neautral colours */
+.adult-bedroom-hs-four {
+    right: 38%;
+    top: 69%;
+}
+/* diffuser */
+.adult-bedroom-hs-five {
+    right: 25%;
+    top: 32%;
+}
+
+
+/* -------------------------------- 
+HOTSPOT POSITIONS - KIDS
+-------------------------------- */
+
+/* stories */
+.kids-bedroom-hs-one {
+    bottom: 37%;
+    left: 20%;
+}
+/* bedding */
+.kids-bedroom-hs-two {
+    bottom: 19%;
+    left: 35%;
+}
+/* blinds */
+.kids-bedroom-hs-three {
+    right: 51%;
+    top: 20%;
+}
+/* light */
+.kids-bedroom-hs-four {
+    right: 49%;
+    top: 55%;
+}
+/* wardrobe */
+.kids-bedroom-hs-five {
+    right: 6%;
+    top: 46%;
+}
+
+
+
+
+
+
+
+/* -------------------------------- 
+KIDS FAMILY SPOT
+-------------------------------- */
+
+.sleep-hub-kids-quote-container {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    width: 95%;
+}
+.sleep-hub-kids-quote-image {
+    width: 100%;
+}
+.sleep-hub-kids-quote-text {
+    margin-left: 0;
+    text-align: center;
+    width: 100%;
+}
+.sleep-hub-kids-quote-image img {
+    padding-left: 0;
+    width: 240px;
+}
+.sleep-hub-kids-quote-image p {
+    left: 25%;
+}
+.sleep-hub-kids-quote-text {
+    margin-top: 10px;
+}
+.sleep-hub-kids-quote-text h3 {
+    margin-bottom: 15px;
+}
+.sleep-hub-kids-quote-text p span {
+    font-size: 28px;
+}
+.sleep-hub-kids-quote-text p {
+   margin-bottom: 5px;
+   font-size: 20px;
+   font-weight: 200;
+   line-height: 25px;
+}
+ 
+ 
+
+  
+/* -------------------------------- 
+SLEEP BY CATEGORY
+-------------------------------- */
+.sleep-hub-more-categories h4 {
+    font-size: 13px;
+    padding: 12px 7px;
+    width: 43%;
+	margin: 10px 7px;
+}
+ 
+}
+
+
+
+
+
+@media screen and (max-width: 480px) {
+
+.sleep-hub-cta-kids-quote strong br {
+	display: block;
+}
+
+}
+
+
+
+
+
+ 
+
+</style>	
+
+</head>
+                
+                
+<body>
+
+
+
+<div class="sleep-hub-hero">
+
+<h1>Let's <strong>sleep</strong> better</h1>
+
+</div>
+
+
+
+
+
+
+
+
+<div class="sleep-hub-section-container sleep-hub-section-white">
+
+<a style="text-decoration: none; color: unset;" href="#poor-sleep-anchor">
+<div class="sleep-hub-section">
+ 
+<h2>Poor sleep affects everyone</h2>
+
+<p>When good sleep is hard to find, it affects your mood, productivity, and your health. Whether you<br> struggle to drift off, stir in the night, or wake up tired and achy, we can help you sleep better.</p>
+
+</div>
+</a>
+
+</div>
+  
+  
+<div class="sleep-hub-section-container sleep-hub-section-dark-blue">
+
+<a class="anchor-land" id="poor-sleep-anchor"></a>
+<div class="sleep-hub-section">
+ 
+<h2>What's keeping you awake?</h2>
+ 
+ 
+ 
+ 
+ <!-- ------ KEEPING AWAKE DESKTOP ------ -->
+ 
+ 
+ <div class="sleep-hub-keeping-awake-desktop-container">
+  
+<div class="sleep-hub-keeping-awake-column">
+  
+  <h3>Temperature</h3>
+  
+  <p>How do <br>you feel?</p>
+
+<a href="#">
+  <h4>Hot <span class="cta"></span></h4>
+</a>
+  
+<a href="#">
+  <h4>Cold <span class="cta"></span></h4>
+</a>
+  
+<a href="#">
+  <h4>Menopausal <span class="cta"></span></h4>
+</a>
+  
+</div>
+  
+  
+  
+  
+  
+<div class="sleep-hub-keeping-awake-column">
+  
+  <h3>Surroundings</h3>
+  
+  <p>Is your <br>environment...</p>
+  
+<a href="#">
+  <h4>Noisy <span class="cta"></span></h4>
+</a>  
+  
+<a href="#">
+  <h4>Too light <span class="cta"></span></h4>
+</a>  
+  
+<a href="#">
+  <h4>Stuffy <span class="cta"></span></h4>
+</a>  
+  
+</div>
+  
+  
+
+
+  
+<div class="sleep-hub-keeping-awake-column sleep-hub-keeping-awake-column-two-lines">
+  
+<h3>Pregnancy <br>&amp; Children</h3>
+  
+  <p>Advice <br>for...</p>
+  
+<a href="#">
+  <h4>Pregnancy <span class="cta"></span></h4>
+</a>
+
+<a href="#">
+  <h4>Baby <span class="cta"></span></h4>
+</a>
+
+<a href="#">
+  <h4>Toddler <span class="cta"></span></h4>
+</a>
+  
+</div>
+  
+ 
+  
+
+<div class="sleep-hub-keeping-awake-column sleep-hub-keeping-awake-column-two-lines">
+  
+  <h3>Aches <br>&amp; Pains </h3>
+  
+  <p>Problem <br>areas? </p>
+
+
+<a href="#">
+  <h4>Back <span class="cta"></span></h4>
+</a>
+
+<a href="#">
+  <h4>Neck <span class="cta"></span></h4>
+</a>
+
+<a href="#">  
+  <h4>All over <span class="cta"></span></h4>
+</a>  
+  
+</div>
+  
+ 
+</div>
+
+
+
+ <div class="sleep-hub-keeping-awake-mobile-container">
+
+
+<iframe style="overflow-y: hidden;" scrolling="no" src="images/sleep-keep-awake-mob-iframe.html" width="100%" height="400px" frameborder="0"></iframe>
+
+
+</div>
+
+
+
+ 
+ 
+ 
+</div>
+</div>
+ 
+ 
+ 
+ 
+<div class="sleep-hub-section-container sleep-hub-section-light-blue">
+<div class="sleep-hub-section">
+
+ 
+<h2>Your Room: Easy changes to improve your sleep</h2>
+
+<p>Click a [+] to see how the item can improve your sleep</p>
+ 
+ <div class="hotspot-outer-container hotspot-outer-container-adult-bedroom">
+ 
+
+	
+    
+    
+    
+<div class="hotspot-inner-container">
+		
+			<ul>
+            
+            
+<!---------------- HOTSPOT #1 ---------------->
+<li class="hs-single-point">
+<a style="position:absolute;" class="hs-img-replace adult-bedroom-hs-one">More</a>
+<div class="hs-more-info hs-more-info-right">
+
+
+<a href="#">
+
+<h3>Join the dark side</h3>
+<h4>We naturally equate darkness with sleep, so block external lights 
+with a blackout blind, dim the room to help you relax, and put your 
+phone down.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Linen Seafoam Blackout <br>Roman Blind<strong>From £25</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-adult-hs1.jpg">
+</div>
+
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+  
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+</div>
+</li>
+
+
+
+<!---------------- HOTSPOT #2 ---------------->
+<li class="hs-single-point">
+<a style="position:absolute;" class="hs-img-replace adult-bedroom-hs-two">More</a>
+<div class="hs-more-info hs-more-info-right">
+
+
+<a href="#">
+
+<h3>Get your timings right</h3>
+<h4>Going to bed and waking up at the same time helps train your body 
+into a sleep routine, so try and stick with it even at the weekends.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Jones Rise and <br>Shine Alarm<strong>£12</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-adult-hs2.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+  
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+</div>
+</li>
+
+
+
+<!---------------- HOTSPOT #3 ---------------->
+<li class="hs-single-point">
+<a style="position:absolute;" class="hs-img-replace adult-bedroom-hs-three">More</a>
+
+<div class="hs-more-info hs-more-info-left">
+
+
+<a href="#">
+
+<h3>Rest your head</h3>
+<h4>Invest in a new pillow that supports your head, neck and shoulders 
+properly, and you're more likely to relax and have a restful night's 
+sleep.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Dorma Full Forever Medium <br>Support Pillow Pair<strong>£18</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-adult-hs3.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+</div>
+</li>
+
+
+
+<!---------------- HOTSPOT #4 ---------------->
+<li class="hs-single-point">
+<a style="position:absolute;" class="hs-img-replace adult-bedroom-hs-four">More</a>
+
+<div class="hs-more-info hs-more-info-left">
+
+
+<a href="#">
+
+<h3>Choose calming colours</h3>
+<h4>Create a visually soothing environment with white, cream or pastel shades and keep the clutter to a minimum.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Alissa 100% Cotton White<br> Duvet Cover Set<strong>From £40</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-adult-hs4.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+</div>
+</li>
+
+
+<!---------------- HOTSPOT #5 ---------------->
+<li class="hs-single-point">
+<a style="position:absolute;" class="hs-img-replace adult-bedroom-hs-five">More</a>
+
+<div class="hs-more-info hs-more-info-left">
+
+
+<a href="#">
+
+<h3>Use relaxing scents</h3>
+<h4>A room diffuser that passively disperses a calming lavender scent should help you relax as soon as you step into your bedroom.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Dorma Lavender &amp; Camomile <br>Reed Diffuser<strong>£22</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-adult-hs5.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+
+<a class="hs-close-info"><u>Close</u> x</a>
+
+</div>
+</li>
+
+
+
+
+                
+</ul>
+            
+            
+
+
+
+<div id="outside-image" style="display: block;">
+
+
+<div class="hs-flip-cover-inside hs-flip-covers-buttton">
+  Look under the covers
+  <img src="images/sleep-hub-wk37-improve-sleep-hotspot-flip-icon.png">
+</div>
+
+
+<img id="hide-img-mobile" src="images/sleep-hub-wk37-improve-sleep-hotspot-adult-hero-over.jpg">
+
+<img id="hide-img-desktop" src="images/sleep-hub-wk37-improve-sleep-hotspot-adult-hero-over-mob.jpg">
+
+</div>
+
+
+
+
+<div id="inside-image" style="display: none;">
+
+<div class="hs-flip-cover-outside hs-flip-covers-buttton">
+Look over the covers
+  <img src="images/sleep-hub-wk37-improve-sleep-hotspot-flip-icon.png">
+</div>
+
+<img id="hide-img-mobile" src="images/sleep-hub-wk37-improve-sleep-hotspot-adult-hero-under.jpg">
+
+<img id="hide-img-desktop" src="images/sleep-hub-wk37-improve-sleep-hotspot-adult-hero-under-mob.jpg">
+
+</div>
+
+            
+            
+</div> 
+	
+
+
+
+
+
+</div>
+ 
+ 
+
+<a href="#">
+<h5 class="sleep-hub-cta sleep-hub-cta-hotspots"><strong class="sleep-hub-cta">Sleep Soundly <span class="cta"></span></strong></h5>
+</a>
+
+
+ 
+</div>
+</div>
+ 
+ 
+ 
+<div class="sleep-hub-section-container sleep-hub-section-dark-blue">
+<div class="sleep-hub-section">
+ 
+<h2>For Kids: Help them settle with a few key steps</h2>
+
+<p>Click a [+] and see what could make a difference</p>
+ 
+ <div class="hotspot-outer-container hotspot-outer-container-kids-bedroom">
+ 
+
+	
+    
+    
+    
+<div class="hotspot-inner-container">
+		
+			<ul>
+            
+            
+
+<!---------------- HOTSPOT #2 ---------------->
+		<li class="hs-single-point">
+<a style="position: absolute;" class="hs-img-replace kids-bedroom-hs-two">More</a>
+
+			<div class="hs-more-info hs-more-info-right">
+
+
+<a href="#">
+
+<h3>Fun bedding</h3>
+<h4>They'll be more excited to go to bed if they're snuggle up in bedding they're chosen themselves.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Space Glow in the Dark <br>Duvet Cover Set<strong>From £24</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-kids-hs3.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+			</div>
+
+		</li>
+<!---------------- END: HOTSPOT #2 ---------------->
+
+
+<!---------------- HOTSPOT #3 ---------------->
+		<li class="hs-single-point">
+<a style="position: absolute;" class="hs-img-replace kids-bedroom-hs-three">More</a>
+
+			<div class="hs-more-info hs-more-info-left">
+
+
+<a href="#">
+
+<h3>A dark room</h3>
+<h4>Blackout blinds provide a consistently dark environment at bedtime, whatever time of day or year, and help to dull noise too.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Luna Navy Blackout<br> Roller Blind<strong>From £14</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-kids-hs2.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+			</div>
+
+		</li>
+<!---------------- END: HOTSPOT #3 ---------------->
+
+
+<!---------------- HOTSPOT #4 ---------------->
+		<li class="hs-single-point">
+<a style="position: absolute;" class="hs-img-replace kids-bedroom-hs-four">More</a>
+
+			<div class="hs-more-info hs-more-info-left">
+
+
+<a href="#">
+
+<h3>Cosy lighting</h3>
+<h4>Turn the lights down with a dimmer or use a table lamp instead of 'the big light' to encourage feelings of calm and cosiness.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Elements Edgar Grey <br>Table Lamp<strong>£25</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-kids-hs4.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+  
+<a class="hs-close-info"><u>Close</u> x</a>
+
+			</div>
+
+		</li>
+<!---------------- END: HOTSPOT #4 ---------------->
+
+
+<!---------------- HOTSPOT #5 ---------------->
+		<li class="hs-single-point">
+<a style="position: absolute;" class="hs-img-replace kids-bedroom-hs-five">More</a>
+
+			<div class="hs-more-info hs-more-info-left">
+
+
+<a href="#">
+
+<h3>Good habits </h3>
+<h4>A reliable routine helps them wind down, whether it's sitting together for a story or choosing tomorrow's clothes.</h4>
+
+<div class="hs-more-info-circle-img">
+<p>Ochre Fransen Chair <strong>£249</strong></p>
+<img src="images/sleep-hub-wk37-improve-sleep-kids-hs5.jpg">
+</div>
+
+<h5>Shop now <span class="cta"></span></h5>
+
+</a>
+
+
+<a class="hs-close-info"><u>Close</u> x</a>
+
+			</div>
+
+		</li>
+<!---------------- END: HOTSPOT #5 ---------------->
+
+                
+			</ul>
+            
+
+<img id="hide-img-mobile" src="images/sleep-hub-wk37-improve-sleep-hotspot-kids-hero.jpg">
+
+<img id="hide-img-desktop" src="images/sleep-hub-wk37-improve-sleep-hotspot-kids-hero-mob.jpg">
+
+
+
+
+            
+		</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="sleep-hub-kids-quote-container">
+  
+<div class="sleep-hub-kids-quote-image">
+<p>As seen on TV</p>
+<img src="images/sleep-hub-wk37-umehs-family.png">
+</div>
+
+<div class="sleep-hub-kids-quote-text">
+  
+  <h3>We asked Jade and Hils a few questions about their family’s sleep routine.</h3>
+  
+  <p><span>“</span>Sleep is something that me and Hils put a lot of time
+ into for both children and something we’re really proud of, so its my 
+pleasure to share our experience with you...<span>”</span></p>
+  
+  <h4>Jade Umeh</h4>
+  
+<a href="#">
+  <h5 class="sleep-hub-cta sleep-hub-cta-kids-quote"><strong>Read Jade's Family <br>Sleep Tips <span class="cta"></span></strong></h5>
+</a>
+  
+<a href="#">
+  <h5 class="sleep-hub-cta sleep-hub-cta-kids-quote"><strong>Shop the<br> rocket room <span class="cta"></span></strong></h5>
+</a>
+  
+</div>
+  
+</div>
+ 
+ 
+ 
+ 
+</div>
+</div>
+ 
+ 
+ 
+<div class="sleep-hub-section-container sleep-hub-section-light-blue">
+<div class="sleep-hub-section">
+ 
+<h2>Sleep enhancers by category</h2>
+ 
+<div class="sleep-hub-more-categories">
+  
+<a href="#">
+<h4>Mattresses <span class="cta"></span></h4>
+</a>
+
+<a href="#">  
+<h4>Beds <span class="cta"></span></h4>
+</a>
+
+<a href="#">  
+<h4>Blinds <span class="cta"></span></h4>
+</a> 
+  
+<a href="#">  
+<h4>Curtains <span class="cta"></span></h4>
+</a>
+
+<a href="#">  
+<h4>Bedding <span class="cta"></span></h4>
+</a>
+  
+<a href="#">
+<h4>Duvets <span class="cta"></span></h4>
+</a>
+
+<a href="#">
+<h4>Pillows <span class="cta"></span></h4>
+</a>
+
+<a href="#">
+<h4>Lighting <span class="cta"></span></h4>
+</a>  
+  
+  
+</div>
+ 
+</div>
+
+
+
+
+
+</div>
+ 
+ 
+ 
+
+<div class="sleep-hub-section-container sleep-hub-section-white">
+<div class="sleep-hub-section">
+
+<h2>More tips and advice on bedding, bedrooms and sleep</h2>
+ 
+ 
+<div class="sleep-hub-blog-row">
+  
+  
+  <div class="sleep-hub-blog-segment">
+   <a href="#">
+		<div class="sleep-hub-blog-segment-image" style="background-image: url(images/wk40-19-sleep-blog01.jpg);"></div>
+
+		<p>How to fold a fitted sheet</p>
+		<h4>Read more <span class="cta"></span></h4>
+    </a>
+  </div>
+  
+  
+  
+  <div class="sleep-hub-blog-segment">
+    
+	<a href="#">
+ 		<div class="sleep-hub-blog-segment-image" style="background-image: url(images/wk40-19-sleep-blog02_1.jpg);"></div>
+
+		<p>How to care for your bedding</p>
+		<h4>Read more <span class="cta"></span></h4>
+	  </a>
+  </div>
+  
+  
+  
+  <div class="sleep-hub-blog-segment">
+  	<a href="#">  
+		<div class="sleep-hub-blog-segment-image" style="background-image: url(images/wk40-19-sleep-blog03.jpg);"></div>
+
+		<p>Tips for a good night's sleep</p>
+		<h4>Read more <span class="cta"></span></h4>
+	  </a>
+  </div>
+  
+
+  
+  <div class="sleep-hub-blog-segment">
+    <a href="#">  
+  		<div class="sleep-hub-blog-segment-image" style="background-image: url(images/wk40-19-sleep-blog04.jpg);"></div>
+
+		<p>A new generation of mattresses</p>
+		<h4>Read more <span class="cta"></span></h4>
+	  </a>
+  </div>
+  
+
+  
+</div>
+
+
+</div>
+</div>
+
+ 
+ 
+ 
+ 
+ 
+
+  
+ 
+
+
+<script>
+
+$(document).ready(function(){
+		
+	//room flip to inside covers	
+	$('.hs-flip-cover-inside').click(function(){
+        $('#outside-image').hide();
+		$('.adult-bedroom-hs-four').hide();
+		$("#inside-image").fadeIn("slow");
+		$(this).addClass('hs-flip-covers-buttton-stop-spin');
+    });
+
+	//room flip to outside covers
+	$('.hs-flip-cover-outside').click(function(){
+        $('#inside-image').hide();
+		$('.adult-bedroom-hs-four').show();
+		$("#outside-image").fadeIn("slow");
+		$(this).addClass('return-to-inside');
+	});
+
+	//open interest point description
+	$('.hs-single-point').children('a').on('click', function(){
+		var selectedPoint = $(this).parent('li');
+		if( selectedPoint.hasClass('is-open') ) {
+			selectedPoint.removeClass('is-open').addClass('visited');
+		} else {
+			selectedPoint.addClass('is-open').siblings('.hs-single-point.is-open').removeClass('is-open').addClass('visited');
+		}
+	});
+	
+	//close interest point description
+	$('.hs-close-info').on('click', function(event){
+		event.preventDefault();
+		$(this).parents('.hs-single-point').eq(0).removeClass('is-open').addClass('visited');
+	});
+	
+	//close interest point on any click
+	$(document).on('click', function(event){
+		if( !$(event.target).is('.hs-single-point a') && !$(event.target).is('.hs-close-info')){
+		$('.hs-single-point.is-open').removeClass('is-open').addClass('visited');
+}
+	});
+	
+	
+});
+
+</script>
+
+
+
+
+            
+</body>
+       

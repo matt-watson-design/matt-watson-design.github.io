@@ -476,7 +476,6 @@ body.is-preload #header.alt .logo {
 }
 
 #header.alt .logo-portfolio img {
-	cursor: -webkit-grab; cursor: grab;
 	display: block;
 	margin: 0 auto;
 	max-width: 150px;
@@ -738,10 +737,10 @@ body.is-preload #header.alt .logo {
 
 #main header.major h2:after {
 	background-color: #dddddd;
-	background-image: -moz-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	background-image: -webkit-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	background-image: -ms-linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
-	background-image: linear-gradient(90deg, #efa8b0, #a89cc8, #8cc9f0);
+	background-image: -moz-linear-gradient(90deg, #a5ca84, #4f8fa8, #4263b0);
+	background-image: -webkit-linear-gradient(90deg, #a5ca84, #4f8fa8, #4263b0);
+	background-image: -ms-linear-gradient(90deg, #a5ca84, #4f8fa8, #4263b0);
+	background-image: linear-gradient(90deg, #a5ca84, #4f8fa8, #4263b0);
 }
 
 #main>.main {

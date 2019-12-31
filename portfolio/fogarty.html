@@ -17,19 +17,23 @@
 
 <body>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo-portfolio"><img src="../images/logo.svg" alt="" /></span>
-						
-					</header>
+<!-- Wrapper -->
+<div id="wrapper">
+
+
+<!-- Header -->
+
+<header id="header" class="alt">
+    <a href="../index.html">
+        <span class="logo-portfolio"><img src="../images/logo.svg" alt="" /></span>
+    </a>
+</header>
+
 
 
 <!-- Main -->
 <div id="main">
-
 	
 
 						
@@ -38,49 +42,80 @@
 <style>
 
 .portfolio-container {
- padding: 6em 5em 3em;
+	padding-top: 6em!important;
 }
-  
-.portfolio-txt-dscrp-artwrk-container {
-  display: inline-flex;
-}
-  
-.portfolio-container-txt-dscrp {
-  text-align: left;
-  width: 50%;
-  padding-right: 1em;
-}
-  .portfolio-container-txt-dscrp p {
- margin-bottom: 1.25em;
-}
-  
-.portfolio-container-artwrk {
-  width: 50%;
 
+.portfolio-txt-dscrp-artwrk-container {
+	display: inline-flex;
 }
-  .portfolio-container-artwrk img{
-  width: 100%;
+
+.portfolio-container-txt-dscrp {
+	text-align: left;
+	width: 50%;
+	padding-right: 1em;
 }
-  
-.portfolio-container-skills-tools {  
-  border-top: 1px solid #dddddd;
-  margin-top: 2em;
+
+.portfolio-container-txt-dscrp p {
+	margin-bottom: 1.25em;
 }
-.portfolio-container-skills-tools h3 {  
-  margin: 1.25em 0 0.75em!important;
+
+.portfolio-container-artwrk {
+	width: 50%;
 }
+
+.portfolio-container-artwrk img{
+	width: 100%;
+}
+
+.portfolio-container-skills-tools {
+	border-top: 1px solid #dddddd;
+	margin-top: 2em;
+}
+
+.portfolio-container-skills-tools h3 {
+	margin: 1.25em 0 0.75em!important;
+}
+
 .portfolio-container-skills-tools p span {
-  color: #34495e;
-  font-weight: 900;
-  margin: 0 2px;
+	color: #34495e;
+	font-weight: 900;
+	margin: 0 2px;
 }
-  
-  
-  
+
+
+@media screen and (max-width: 940px) {
+.portfolio-txt-dscrp-artwrk-container {
+    display: block;
+}
+
+.portfolio-container-txt-dscrp {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+}
+
+.portfolio-container-txt-dscrp p {
+    text-align: left;
+}
+
+.portfolio-container-artwrk {
+    width: 100%;
+}
+
+header.major h2:after {
+    margin: 0.3em auto 1em;
+}
+
+.portfolio-container-artwrk img{
+    max-width: 450px;
+}
+}
+
+
 </style>
 
 
-<section class="portfolio-container">
+<section class="portfolio-container main">
 
   
   <div class="portfolio-txt-dscrp-artwrk-container">
@@ -97,11 +132,13 @@
 
 
   
-  <p>Fogarty is a sub-brand of Dunelm, that specilises in quality, affordable bedding.</p>
+  <p>Fogarty is a sub-brand of Dunelm that specialises in quality, affordable bedding.</p>
 
-<p>This project required......</p>
- 
-  <a href="fogarty/fogarty.html" data-lity="" class="button primary small">
+<p>This project required a brand new journey to be designed in order to showcase some of the new product photography and unique selling points across the Fogarty range.</p>
+
+<p>The 'Fogarty Sleep Zone' was split into five categories offering tabbed sub-categories within them. This was all built from scratch using HTML/CSS, and utilised jQuery to load in and out the required sub-categories via the interactive tabs.</p>
+
+  <a href="fogarty/fogarty-landing.html" data-lity="" class="button primary">
     Live Demo
    </a>
   
@@ -113,7 +150,7 @@
   
 <div class="portfolio-container-artwrk">
   
-  <img src="https://images.unsplash.com/photo-1499084732479-de2c02d45fcc?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;w=1000&amp;q=80">
+  <img src="../images/portfolio-fogarty-showcase.jpg">
   
   </div>
   

@@ -114,8 +114,9 @@
 }
 .lity-close {
     background-image: url("../images/close-btn-bkgd.jpg");
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+    border: 0 none;
+    border-radius: 8px 8px 0 0;
+    padding: 0 1.5em;
     box-shadow: none;
     color: #fff;
     cursor: pointer;
