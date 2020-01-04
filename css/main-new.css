@@ -1,6 +1,6 @@
 
 @import 'https://fonts.googleapis.com/css?family=Lato:300,400,900';
-
+@import url(fontawesome-all.min.css);
 
 
 /* General */
@@ -414,7 +414,7 @@ header.major h2:after {
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 940px) {
 
 	#header.alt {
 		padding: 3em 2em 1em 2em;
@@ -458,36 +458,6 @@ body.is-preload #header.alt .logo {
 
 
 
-
-/* Logo - Portfolio Pages */
-
-
-#header.alt .logo-portfolio {
-	-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
-	-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
-	-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
-	transition: opacity 1.25s ease, transform 0.5s ease;
-	-moz-transition-delay: 0s;
-	-webkit-transition-delay: 0s;
-	-ms-transition-delay: 0s;
-	transition-delay: 0s;
-	display: block;
-	margin: 0 0 -6.5em;
-}
-
-#header.alt .logo-portfolio img {
-	display: block;
-	margin: 0 auto;
-	max-width: 150px;
-	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
-	transition: width 1s, height 1s, transform 1s;
-}
-
-#header.alt .logo-portfolio img:hover {
-	-webkit-transform: rotate(180deg);
-	transform: rotate(180deg);
-	transition-delay: 0.5s;
-}
 
 
 
@@ -582,7 +552,7 @@ body.is-preload #header.alt .logo {
 	padding: 0.25em 1.25em;
 	border: 0;
 	box-shadow: inset 0 0 0 1px transparent;
-	font-size: 24px;
+	font-size: 1.5em;
     font-weight: 400;
 	letter-spacing: 0.075em;
 	text-transform: uppercase;
@@ -693,10 +663,6 @@ body.is-preload #header.alt .logo {
 	border-radius: 0.25em;
 }
 
-#main a:hover {
-	color: #636363;
-}
-
 #main h2 {
 	font-size: 2em;
 }
@@ -745,15 +711,15 @@ body.is-preload #header.alt .logo {
 
 #main>.main {
 	padding: 5em 5em 3em 5em;
-	border-top: solid 1px #dddddd;
+	border-bottom: solid 1px #dddddd;
 }
 
-#main>.main:first-child {
+#main>.main:last-child {
 	border-top: 0;
 }
 
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 940px) {
 	#main>.main {
 		padding: 4em 3em 2em 3em;
 	}
@@ -837,3 +803,217 @@ body.is-preload #header.alt .logo {
 		max-width: 100%;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+/* Logo - Portfolio Pages */
+
+
+#header.alt .logo-portfolio {
+	-moz-transition: opacity 1.25s ease, -moz-transform 0.5s ease;
+	-webkit-transition: opacity 1.25s ease, -webkit-transform 0.5s ease;
+	-ms-transition: opacity 1.25s ease, -ms-transform 0.5s ease;
+	transition: opacity 1.25s ease, transform 0.5s ease;
+	-moz-transition-delay: 0s;
+	-webkit-transition-delay: 0s;
+	-ms-transition-delay: 0s;
+	transition-delay: 0s;
+	display: flex;
+	margin: 0 0 -6.5em;
+}
+
+#header.alt .logo-portfolio img {
+	display: block;
+	margin: 0 auto;
+	max-width: 150px;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s;
+	transition: width 1s, height 1s, transform 1s;
+    z-index: 1;
+}
+
+#header.alt .logo-portfolio img:hover {
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+	transition-delay: 0.5s;
+}
+
+@media screen and (max-width: 940px) {
+
+#header.alt .logo-portfolio {
+	margin: 0 0 -5em;
+}  
+#header.alt .logo-portfolio img {
+	max-width: 125px;
+}
+
+}
+
+@media screen and (max-width: 640px) {
+#header.alt .logo-portfolio {
+	margin: 0 0 -4em;
+}
+#header.alt .logo-portfolio img {
+	max-width: 100px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+/* Portfolio Page */
+  
+.portfolio-main {
+    position: relative;
+}
+
+.portfolio-container {
+	padding-top: 5em!important;
+}
+
+.portfolio-txt-dscrp-artwrk-container {
+	display: inline-flex;
+}
+
+.portfolio-container-txt-dscrp {
+	text-align: left;
+	width: 50%;
+	padding-right: 1em;
+}
+
+.portfolio-container-txt-dscrp p {
+	margin-bottom: 1.25em;
+}
+
+.portfolio-container-artwrk {
+	width: 50%;
+}
+
+.portfolio-container-artwrk img{
+	width: 100%;
+}
+
+.portfolio-container-skills-tools {
+	border-top: 1px solid #dddddd;
+	margin-top: 2em;
+}
+
+.portfolio-container-skills-tools h3 {
+	margin: 1.25em 0 0.75em!important;
+}
+
+.portfolio-container-skills-tools p span {
+	color: #34495e;
+	font-weight: 900;
+	margin: 0 2px;
+}
+
+
+@media screen and (max-width: 940px) {
+.portfolio-txt-dscrp-artwrk-container {
+    display: block;
+}
+
+.portfolio-container-txt-dscrp {
+    text-align: center;
+    width: 100%;
+    padding-right: 0;
+}
+
+.portfolio-container-txt-dscrp p {
+    text-align: left;
+}
+
+.portfolio-container-artwrk {
+    width: 100%;
+}
+
+header.major h2:after {
+    margin: 0.3em auto 1em;
+}
+
+.portfolio-container-artwrk img{
+    max-width: 450px;
+}
+}
+
+
+
+.back-tab {
+    border: 0 none;
+    border-radius: 8px 8px 0 0;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 300;
+    background-color: #34495e;
+    padding: 0 1.25em;
+    text-align: left;
+    text-decoration: none;
+    position:absolute;
+    left: 20px;
+    top: -54px;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.075em;
+    line-height: 2.25em;
+    -moz-transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-ms-transition: 0.2s;
+	transition: 0.2s;
+}
+  
+.back-tab:hover {
+    padding: 0 1.5em 0 1em;
+    -moz-transition: 0.2s;
+	-webkit-transition: 0.2s;
+	-ms-transition: 0.2s;
+	transition: 0.2s;
+}
+
+
+
+@media screen and (max-width: 940px) {
+
+.back-tab {
+    font-size: 1.25em;
+    padding: 0 1em;
+    top: -45px;
+}
+.back-tab:hover {
+    padding: 0 1.25em 0 0.75em;
+}
+
+
+@media screen and (max-width: 640px) {
+
+.back-tab {
+    font-size: 1em;
+    padding: 0 0.75em;
+    top: -36px;
+    left: 10px;
+}
+.back-tab:hover {
+    padding: 0 0.75em;
+}
+
+
+}
+
+
+
+
+
