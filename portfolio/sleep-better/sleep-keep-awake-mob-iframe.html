@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<!-- start CustomStaticContent.jsp -->
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><link href="css_002.css" rel="stylesheet">
+
+<link href="css_003.css" rel="stylesheet">
+
+<style>
+
+.sleep-hub-keeping-awake-desktop-container {
+	display: none;
+}
+.sleep-hub-keeping-awake-mobile-container {
+    display: block;
+    margin: 0 auto;
+    max-width: 360px;
+    width: 100%;
+}
+.sleep-hub-keeping-awake-mobile-slider .navigation label {
+	background: #B1B1B1;
+}
+.sleep-hub-keeping-awake-mobile-slider .arrows label {
+	background-color: #fff;
+	border-radius: 50%;
+}
+.sleep-hub-keeping-awake-mobile-slider {
+	-moz-perspective: 1300px;
+	-ms-perspective: 1300px;
+	-webkit-perspective: 1300px;
+	perspective: 1300px;
+	text-align: center;
+	position: relative;
+	margin-bottom: 22px;
+}
+.sleep-hub-keeping-awake-mobile-slider > input {
+	display: none;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(10):checked ~ ul li:first-of-type {
+	margin-left: -900%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(9):checked ~ ul li:first-of-type {
+	margin-left: -800%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(8):checked ~ ul li:first-of-type {
+	margin-left: -700%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(7):checked ~ ul li:first-of-type {
+	margin-left: -600%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(6):checked ~ ul li:first-of-type {
+	margin-left: -500%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(5):checked ~ ul li:first-of-type {
+	margin-left: -400%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(4):checked ~ ul li:first-of-type {
+	margin-left: -300%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(3):checked ~ ul li:first-of-type {
+	margin-left: -200%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(2):checked ~ ul li:first-of-type {
+	margin-left: -100%;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(1):checked ~ ul li:first-of-type {
+	margin-left: 0%;
+}
+.sleep-hub-keeping-awake-mobile-slider > ul {
+    box-sizing: border-box;
+    font-size: 0;
+    height: auto;
+    line-height: 0;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 0 20px 60px;
+    position: relative;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 1;
+}
+.sleep-hub-keeping-awake-mobile-slider > ul > li {
+	position: relative;
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	line-height: normal;
+	-moz-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+	-o-transition: all 0.5s ease-out;
+	-webkit-transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+	transition: all 0.5s cubic-bezier(0.4, 1.3, 0.65, 1);
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	vertical-align: top;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	white-space: normal;
+}
+.sleep-hub-keeping-awake-mobile-slider > ul > li.scrollable {
+	overflow-y: scroll;
+}
+.sleep-hub-keeping-awake-mobile-slider > .navigation {
+	position: absolute;
+	bottom: -10px;
+	left: 50%;
+	z-index: 10;
+	margin-bottom: -10px;
+	font-size: 0;
+	line-height: 0;
+	text-align: center;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.sleep-hub-keeping-awake-mobile-slider > .navigation > div {
+	margin-left: -100%;
+}
+.sleep-hub-keeping-awake-mobile-slider > .navigation label {
+	position: relative;
+	display: inline-block;
+	cursor: pointer;
+	border-radius: 50%;
+	margin: 0 5px;
+	padding: 5px;
+	background: #fff;
+}
+.sleep-hub-keeping-awake-mobile-slider > .navigation label:hover:after {
+	opacity: 1;
+}
+.sleep-hub-keeping-awake-mobile-slider > .navigation label:after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -8px;
+	margin-top: -8px;
+	background: #fff;
+	border-radius: 50%;
+	padding: 8px;
+	opacity: 0;
+	transition: 0.25s;
+}
+.sleep-hub-keeping-awake-mobile-slider > .arrows {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.sleep-hub-keeping-awake-mobile-slider.inside .navigation {
+	bottom: 10px;
+	margin-bottom: 10px;
+}
+.sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(1):checked ~ .navigation label:nth-of-type(1):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(2):checked ~ .navigation label:nth-of-type(2):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(3):checked ~ .navigation label:nth-of-type(3):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(4):checked ~ .navigation label:nth-of-type(4):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(5):checked ~ .navigation label:nth-of-type(5):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(6):checked ~ .navigation label:nth-of-type(6):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(7):checked ~ .navigation label:nth-of-type(7):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(8):checked ~ .navigation label:nth-of-type(8):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(9):checked ~ .navigation label:nth-of-type(9):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(10):checked ~ .navigation label:nth-of-type(10):after, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(11):checked ~ .navigation label:nth-of-type(11):after {
+	opacity: 1;
+}
+.sleep-hub-keeping-awake-mobile-slider > .arrows {
+    box-sizing: content-box;
+    height: 26px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    z-index: 1;
+}
+.sleep-hub-keeping-awake-mobile-slider > .arrows label {
+	display: none;
+	position: absolute;
+	top: -50%;
+	cursor: pointer;
+	-moz-transition: .15s;
+	-o-transition: .15s;
+	-webkit-transition: .15s;
+	transition: .15s;
+}
+.sleep-hub-keeping-awake-mobile-slider > .arrows label:hover {
+/*insert here*/
+}
+.sleep-hub-keeping-awake-mobile-slider .arrows label::after {
+	border-style: solid;
+    border-width: 0 2px 2px 0;
+    color: #8c8685;
+    content: "";
+    display: inline-block;
+    margin: 6px 3px 2px -3px;
+    padding: 5px;
+    transform: rotate(-45deg);
+}
+.sleep-hub-keeping-awake-mobile-slider > .arrows label:before {
+	content: '';
+	position: absolute;
+	top: -100%;
+	left: -100%;
+	height: 300%;
+	width: 300%;
+}
+.sleep-hub-keeping-awake-mobile-slider.infinity > input:first-of-type:checked ~ .arrows label:last-of-type, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(1):checked ~ .arrows label:nth-of-type(0), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(2):checked ~ .arrows label:nth-of-type(1), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(3):checked ~ .arrows label:nth-of-type(2), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(4):checked ~ .arrows label:nth-of-type(3), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(5):checked ~ .arrows label:nth-of-type(4), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(6):checked ~ .arrows label:nth-of-type(5), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(7):checked ~ .arrows label:nth-of-type(6), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(7), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(8), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(9), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(10) {
+	padding: 5px 11px 4px 12px;
+	display: block;
+	left: 0;
+	-moz-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	transform: rotate(180deg);
+}
+.sleep-hub-keeping-awake-mobile-slider.infinity > input:last-of-type:checked ~ .arrows label:first-of-type, .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(1):checked ~ .arrows label:nth-of-type(2), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(2):checked ~ .arrows label:nth-of-type(3), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(3):checked ~ .arrows label:nth-of-type(4), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(4):checked ~ .arrows label:nth-of-type(5), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(5):checked ~ .arrows label:nth-of-type(6), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(6):checked ~ .arrows label:nth-of-type(7), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(7):checked ~ .arrows label:nth-of-type(8), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(8):checked ~ .arrows label:nth-of-type(9), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(9):checked ~ .arrows label:nth-of-type(10), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(10):checked ~ .arrows label:nth-of-type(11), .sleep-hub-keeping-awake-mobile-slider > input:nth-of-type(11):checked ~ .arrows label:nth-of-type(12) {
+	padding: 6px 11px 3px 12px;
+	display: block;
+	right: 0;
+	-moz-transform: rotate(0deg);
+	-ms-transform: rotate(0deg);
+	-o-transform: rotate(0deg);
+	-webkit-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+
+/* -------- INNER TEXT -------- */
+
+.sleep-hub-keeping-awake-mobile-slider-inner-content a {
+	text-decoration: none;
+}
+.sleep-hub-keeping-awake-mobile-slider-inner-content h3 {
+    margin-bottom: 30px;
+    margin-top: -15px;
+}
+.sleep-hub-keeping-awake-mobile-slider-inner-content h3 strong {
+	font-family: Nunito Sans;
+	background-color: #fff;
+	color: #9ab6ca;
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 24px;
+	padding: 6px 18px;
+}
+
+.sleep-hub-keeping-awake-mobile-slider-inner-content h2 strong {
+    color: #fff;
+    display: inline-block;
+    font-family: Patua One;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-bottom: 12px;
+}
+
+.sleep-hub-keeping-awake-mobile-slider-inner-content p {
+	color: #fff;
+	font-family: Nunito Sans;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	margin: 0 0 20px;
+}
+.sleep-hub-keeping-awake-mobile-slider-inner-content h5 {
+	background-color: #fff;
+	margin-bottom: 20px;
+	width: 40%;
+	min-width: 140px;
+	margin: 10px auto;
+	font-family: Nunito Sans;
+	background-color: #fff;
+	color: #8c8685;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.075em;
+	padding: 10px 15px;
+}
+ 
+ 
+ 
+ 
+ 
+</style>
+
+
+</head><body><p style="position: absolute; text-indent: -100px;">Sorry,</p>
+
+<div class="sleep-hub-keeping-awake-mobile-container">
+
+
+<div id="slider1" class="sleep-hub-keeping-awake-mobile-slider infinity inside">
+        <input name="slides" id="slides_1" checked="checked" type="radio">
+        <input name="slides" id="slides_2" type="radio">
+        <input name="slides" id="slides_3" type="radio">
+        <input name="slides" id="slides_4" type="radio">
+        
+        
+        <ul>
+        
+    
+
+<li class="sleep-hub-keeping-awake-mobile-slider-inner-content">
+
+<div style="max-width: 80%; border: 1px solid rgb(255, 255, 255); margin: 25px auto 0px; padding-bottom: 10px;">  
+     
+        <h3><strong>1/4</strong></h3>
+        
+	<div class="sleep-hub-keeping-awake-mobile-slider-inner-content-outline">
+	<h2><strong>Temperature</strong></h2>
+	</div>
+    
+        <p>How do you feel?</p>
+        
+	<a href="https://www.dunelm.com/info/sleep/temperature-hot" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-temperature-hot">
+		<h5>Hot</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/temperature-cold" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-temperature-cold">
+        <h5>Cold</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/temperature-menopausal" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-temperature-menopausal">
+        <h5>Menopausal</h5>
+     </a>
+     
+</div>
+     
+</li>
+
+
+  
+<li class="sleep-hub-keeping-awake-mobile-slider-inner-content">
+
+<div style="max-width: 80%; border: 1px solid rgb(255, 255, 255); margin: 25px auto 0px; padding-bottom: 10px;">  
+     
+        
+        <h3><strong>2/4</strong></h3>
+        
+	<div class="sleep-hub-keeping-awake-mobile-slider-inner-content-outline">
+	<h2><strong>Surroundings</strong></h2>
+	</div>
+    
+        <p>Is your environment...</p>
+        
+	<a href="https://www.dunelm.com/info/sleep/surroundings-noisy" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-surroundings-noisy">
+		<h5>Noisy</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/surroundings-light" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-surroundings-light">
+        <h5>Too light</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/surroundings-stuffy" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-surroundings-stuffy">
+        <h5>Stuffy</h5>
+     </a>
+     
+</div>
+     
+</li>
+            
+            
+            
+            
+            
+<li class="sleep-hub-keeping-awake-mobile-slider-inner-content">
+
+<div style="max-width: 80%; border: 1px solid rgb(255, 255, 255); margin: 25px auto 0px; padding-bottom: 10px;">  
+     
+        
+        <h3><strong>3/4</strong></h3>
+        
+	<div class="sleep-hub-keeping-awake-mobile-slider-inner-content-outline">
+	<h2><strong style="margin-top: -10px;">Pregnancy &amp; Children</strong></h2>
+	</div>
+    
+        <p>Advice for...</p>
+        
+	<a href="https://www.dunelm.com/info/sleep/kids-pregnancy" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-kids-pregnancy">
+		<h5>Pregnancy</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/kids-baby" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-kids-baby">
+        <h5>Baby</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/kids-toddler" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-kids-toddler">
+        <h5>Toddler</h5>
+     </a>
+     
+</div>
+     
+</li>
+
+
+
+
+<li class="sleep-hub-keeping-awake-mobile-slider-inner-content">
+
+<div style="max-width: 80%; border: 1px solid rgb(255, 255, 255); margin: 25px auto 0px; padding-bottom: 10px;">  
+     
+        
+        <h3><strong>4/4</strong></h3>
+        
+	<div class="sleep-hub-keeping-awake-mobile-slider-inner-content-outline">
+	<h2><strong>Aches &amp; Pains</strong></h2>
+	</div>
+    
+        <p>Problem areas?</p>
+        
+	<a href="https://www.dunelm.com/info/sleep/aches-back" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-aches-back">
+		<h5>Back</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/aches-neck" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-aches-neck">
+        <h5>Neck</h5>
+     </a>
+     
+	<a href="https://www.dunelm.com/info/sleep/aches-all" target="_parent" manual_cm_sp="sleep-hub-_-link_1-_-wk37-aches-all">
+        <h5>All over</h5>
+     </a>
+     
+</div>
+     
+</li>
+  
+            
+        </ul>
+        
+        
+        <div class="arrows">
+            <label for="slides_1"></label>
+            <label for="slides_2"></label>
+            <label for="slides_3"></label>
+            <label for="slides_4"></label>
+        </div>
+        <div class="navigation">
+            <div>
+                <label for="slides_1"></label>
+                <label for="slides_2"></label>
+                <label for="slides_3"></label>
+                <label for="slides_4"></label>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<!-- end CustomStaticContent.jsp --></body></html>

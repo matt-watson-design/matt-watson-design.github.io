@@ -1,0 +1,2216 @@
+<!DOCTYPE HTML>
+
+<html>		
+<head>
+
+
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,600,700" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Patua+One" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet"> 
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+<script>
+
+// Main show/hide function
+// Adds the active button class
+
+
+$(document).ready(function(){
+	
+	
+	$('.cinnabar-one-btn').click(function(){
+        $('#waters-edge-content').hide();
+        $('#elements-content').hide();
+        $('#fifth-avenue-content').hide();
+        $('#cinnabar-content').slideDown(1000);
+		$('.button').not(this).removeClass('waters-edge-two-btn-active');
+		$('.button').not(this).removeClass('elements-three-btn-active');
+		$('.button').not(this).removeClass('fifth-avenue-four-btn-active');
+		$(this).addClass('cinnabar-one-btn-active');
+    });
+
+
+	$('.waters-edge-two-btn').click(function(){
+        $('#cinnabar-content').hide();
+        $('#elements-content').hide();
+        $('#fifth-avenue-content').hide();
+        $('#waters-edge-content').slideDown(1000);  
+		$('.button').not(this).removeClass('cinnabar-one-btn-active');
+		$('.button').not(this).removeClass('elements-three-btn-active');
+		$('.button').not(this).removeClass('fifth-avenue-four-btn-active');
+		$(this).addClass('waters-edge-two-btn-active');
+    });
+
+
+	$('.elements-three-btn').click(function(){
+        $('#cinnabar-content').hide();
+        $('#waters-edge-content').hide();
+        $('#fifth-avenue-content').hide();
+        $('#elements-content').slideDown(1000); 
+		$('.button').not(this).removeClass('cinnabar-one-btn-active');
+		$('.button').not(this).removeClass('waters-edge-two-btn-active');
+		$('.button').not(this).removeClass('fifth-avenue-four-btn-active');
+		$(this).addClass('elements-three-btn-active');
+    });	
+
+
+	$('.fifth-avenue-four-btn').click(function(){
+        $('#cinnabar-content').hide();
+        $('#waters-edge-content').hide();
+        $('#elements-content').hide();
+        $('#fifth-avenue-content').slideDown(1000); 
+		$('.button').not(this).removeClass('cinnabar-one-btn-active');
+		$('.button').not(this).removeClass('waters-edge-two-btn-active');
+		$('.button').not(this).removeClass('elements-three-btn-active');
+		$(this).addClass('fifth-avenue-four-btn-active');
+    });	
+
+	
+});
+
+
+
+
+</script>    
+    
+
+<style>
+  
+  body {
+     max-width: 1180px;
+     margin: 0 auto!important;
+}
+ img {
+     border: 0;
+     max-width: 100%;
+     vertical-align: middle;
+}
+ body,html {
+     margin: 0;
+     padding: 0;
+}
+ h2,h3,h4 {
+     padding: 0;
+}
+ strong {
+     font-weight: 700;
+}
+ h2,h3 {
+     font-size: 100%;
+}
+ h2,h3,h4 {
+     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+     font-weight: 700;
+     margin: 0;
+     text-rendering: optimizelegibility;
+}
+ p {
+     font-size: .875em;
+}
+ p {
+     margin: 0 0 20px;
+}
+ a {
+     text-decoration: underline;
+     color: #3f9c35;
+}
+ a:hover {
+     color: #32682a;
+}
+ a:active,a:hover {
+     outline: 0;
+}
+ a:focus {
+     outline: thin dotted;
+     color: #32682a;
+}
+ a:visited {
+     color: #3f9c35;
+}
+ ::-moz-selection {
+     background: #50c044;
+     text-shadow: none;
+}
+ ::selection {
+     background: #50c044;
+     text-shadow: none;
+}
+ * {
+     box-sizing: border-box;
+}
+ html {
+     background: #fff;
+     font-size: 100%;
+     -webkit-overflow-scrolling: touch;
+     -webkit-tap-highlight-color: transparent;
+     -webkit-text-size-adjust: 100%;
+     -webkit-font-smoothing: antialiased;
+     -ms-text-size-adjust: 100%;
+     overflow-x: hidden;
+}
+ body {
+     width: 100%;
+     background-color: transparent;
+     font-family: Arial,"Helvetica Neue",Helvetica,sans-serif;
+     font-size: 1em;
+     line-height: 20px;
+     color: #333;
+}
+
+/* FULL WIDTHS OVERWRITES */
+ .category__content {
+     border-left: none;
+     float: left;
+     padding-left: 0;
+     width: 100%;
+}
+ .category__sidebar {
+     display:none;
+}
+ .page-heading {
+     display:none;
+}
+/* GENERAL STYLES */
+ .breadcrumbs {
+     display: none;
+}
+ #break-mobile {
+     display: none;
+}
+ #break-desktop {
+     display: block;
+}
+ .mob-only {
+     display: none;
+}
+ .dark-text {
+     color: #333;
+}
+ .light-text {
+     color: #fff;
+}
+/* TITLE */
+ .trends-nav-container {
+     float: left;
+     height: auto;
+     position: relative;
+     width: 100%;
+}
+ .trends-title-container {
+     display: block;
+     float: left;
+     position: relative;
+     text-align: center;
+     width: 100%;
+}
+ .trends-title {
+     margin: 0 auto;
+     padding: 10px 20px;
+     margin-bottom: 15px;
+}
+ .trends-title h2 {
+     color: #333;
+     font-family: Patua One;
+     font-size: 66px;
+     font-weight: 300;
+     line-height: 70px;
+     margin-bottom: 5px;
+}
+ .trends-title h3 {
+     color: #333;
+     font-family: Marck Script;
+     font-size: 38px;
+     line-height: 43px;
+     margin-bottom: 12px;
+}
+ .trends-title p {
+     color: #333;
+     font-family: Nunito Sans;
+     font-size: 18px;
+     font-weight: 500;
+     line-height: 23px;
+     margin-bottom: 5px;
+}
+ .trends-title p br {
+     display: none;
+}
+/* MAIN CONTENT STYLES */
+ .trends-main-container a {
+     text-decoration:none;
+}
+ .trends-main-container {
+     float: left;
+     width: 100%;
+     height: auto;
+     margin-bottom: 70px;
+}
+ .content-container {
+     width: 100%;
+     height: auto;
+     float: left;
+     display: block;
+     position: relative;
+     text-align: center;
+}
+ .exit-mob {
+     display: none;
+}
+ .hero-banner-container {
+     float: left;
+     position: relative;
+     width: 100%;
+}
+/* TREND TITLE BANNER */
+ .hero-banner {
+     background-position: center -165px;
+     background-repeat: no-repeat;
+     background-size: cover;
+     float: left;
+     width: 100%;
+     position: relative;
+}
+ .hero-banner-intro-img {
+     float: left;
+     width: 40%;
+}
+ .hero-banner-intro-txt-container {
+     float: left;
+     width: 60%;
+     text-align: left;
+     padding: 50px 5%;
+     margin-bottom: 50px;
+}
+ #hero-banner-intro-txt-container-cinnabar {
+     background-color: #e3e1db;
+}
+
+ .hero-banner-intro-txt {
+     float: left;
+     width: 100%;
+     text-align: center;
+     padding: 20px 20px 32px;
+}
+ #hero-banner-intro-txt-cinnabar {
+     background-color: #c86c62;
+     -webkit-box-shadow: 15px 15px 0px 0px rgba(220,178,173,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     -moz-box-shadow: 15px 15px 0px 0px rgba(220,178,173,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     box-shadow: 15px 15px 0px 0px rgba(220,178,173,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+}
+ #hero-banner-intro-txt-waters-edge {
+     background-color: #929d9d;
+     -webkit-box-shadow: 15px 15px 0px 0px rgba(213,214,216,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     -moz-box-shadow: 15px 15px 0px 0px rgba(213,214,216,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     box-shadow: 15px 15px 0px 0px rgba(213,214,216,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+}
+ #hero-banner-intro-txt-elements {
+     background-color: #9b9b34;
+     -webkit-box-shadow: 15px 15px 0px 0px rgba(197,197,127,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     -moz-box-shadow: 15px 15px 0px 0px rgba(197,197,127,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     box-shadow: 15px 15px 0px 0px rgba(197,197,127,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+}
+ #hero-banner-intro-txt-fifth-avenue {
+     background-color: #035945;
+     -webkit-box-shadow: 15px 15px 0px 0px rgba(100,162,148,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     -moz-box-shadow: 15px 15px 0px 0px rgba(100,162,148,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+     box-shadow: 15px 15px 0px 0px rgba(100,162,148,1), 17px 17px 10px 0px rgba(0,0,0,0.5);
+}
+ .hero-banner-intro-txt img {
+     margin-bottom: 12px;
+}
+ #hero-banner-intro-txt-cinnabar img {
+     width: 275px;
+}
+ #hero-banner-intro-txt-waters-edge img {
+     width: 380px;
+}
+ #hero-banner-intro-txt-elements img {
+     width: 250px;
+}
+ #hero-banner-intro-txt-fifth-avenue img {
+     width: 275px;
+}
+ .hero-banner-intro-txt p {
+     color: #fff;
+     font-family: Nunito Sans;
+     font-size: 17px;
+     font-weight: 300;
+     line-height: 22px;
+     margin: 0 auto 28px;
+     max-width: 80%;
+}
+ .hero-banner-intro-txt h4 strong {
+     background-color: #fff;
+     color: #333;
+     font-family: Nunito Sans;
+     font-size: 15px;
+     font-weight: 600;
+     letter-spacing: 0.1em;
+     line-height: 20px;
+     padding: 10px 17px 9px 19px;
+     text-transform: uppercase;
+}
+ .hero-banner h3 {
+     font-family: Patua One;
+     font-size: 30px;
+     line-height: 35px;
+     font-weight: 300;
+}
+ #hero-banner-txt-cinnabar {
+     color: #c86c62;
+}
+ #hero-banner-txt-waters-edge {
+     color: #929d9d;
+}
+ #hero-banner-txt-elements {
+     color: #9b9b34;
+}
+ #hero-banner-txt-fifth-avenue {
+     color: #035945;
+}
+/* PRODUCT SEGMENT */
+ .room-section-container {
+     width: 80%;
+     float: left;
+     margin: 0 10%;
+}
+ .room-section-container p {
+     color: #333;
+     font-family: Nunito Sans;
+     font-size: 16px;
+     font-weight: 300;
+     line-height: 20px;
+     margin-top: 5px;
+     margin-bottom: 0;
+}
+ .room-section-container p strong {
+     display: block;
+     padding-top: 3px;
+     font-weight: 700;
+}
+ .room-section-container-three-thumbs-container {
+     float: left;
+     width: 35%;
+}
+ .room-section-container-thumb {
+     width: 100%;
+     margin-bottom: 20px;
+     float: left;
+}
+ .room-section-container-thumb img {
+     padding: 15px 25px 5px;
+     width: 75%;
+}
+ .room-section-container-big-thumb-container {
+     float: left;
+     width: 65%;
+     padding: 0 20px;
+     margin-top: 35px;
+}
+ .room-section-big-thumb-holder {
+     position: relative;
+}
+ .room-section-big-thumb-holder img {
+     width: 520px;
+     margin-bottom: 5px;
+}
+ .room-section-container-big-thumb-script-text {
+     font-family: Marck Script;
+     font-size: 20px;
+     line-height: 22px;
+     margin-top: 25px;
+     position: absolute;
+}
+ .room-script-cinnabar-top {
+     color: #333;
+     top: 35px;
+     right: 50px;
+     max-width: 200px;
+     text-shadow: 0 0 10px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+}
+ .room-script-cinnabar-bottom {
+     color: #333;
+     max-width: 180px;
+     right: 40px;
+     text-shadow: 0 0 10px #ffffff, 0 0 20px rgb(255, 255, 255, 1);
+     top: 0;
+}
+ .room-script-waters-edge-top {
+     color: #333;
+     top: 30px;
+     right: 60px;
+     max-width: 200px;
+     text-shadow: 0 0 10px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+}
+ .room-script-waters-edge-bottom {
+     color: #333;
+     left: 55px;
+     max-width: 230px;
+     text-shadow: 0 0 2px #ffffff, 0 0 0 rgba(255, 255, 255, 0.01);
+     top: 0;
+}
+ .room-script-elements-top {
+     bottom: 15px;
+     color: #333;
+     left: 90px;
+     max-width: 215px;
+     text-shadow: 0 0 8px #ffffff, 0 0 20px rgb(255, 255, 255, 1);
+}
+ .room-script-elements-bottom {
+     bottom: 45px;
+     color: #333;
+     left: 45px;
+     max-width: 225px;
+     text-shadow: 0 0 3px #ffffff, 0 0 20px rgba(255, 255, 255, 0.1);
+}
+ .room-script-5a-top {
+     color: #333;
+     max-width: 200px;
+     right: 50px;
+     text-shadow: 0 0 10px #ffffff, 0 0 20px rgba(255, 255, 255, 0.5);
+     top: 30px;
+}
+ .room-script-5a-bottom {
+     color: #fff;
+     max-width: 215px;
+     right: 150px;
+     top: 30px;
+}
+ .room-section-container-big-thumb-container h4 {
+     margin: 25px 0;
+}
+ .room-section-container-big-thumb-container h4 strong {
+     border: 2px solid #333;
+     color: #333;
+     font-family: Nunito Sans;
+     font-size: 15px;
+     font-weight: 600;
+     letter-spacing: 0.1em;
+     line-height: 20px;
+     padding: 10px 30px 9px 33px;
+     text-transform: uppercase;
+}
+/* DESIGNER QUOTE */
+ .designer-quote {
+     width: 80%;
+     float: left;
+     margin: 30px 10%;
+}
+ .designer-quote img {
+     float: left;
+     margin-right: 25px;
+     width: 150px;
+}
+ .designer-quote-script-txt {
+     font-family: Marck Script;
+     font-size: 30px;
+     line-height: 36px;
+     margin-top: 20px;
+}
+ .designer-quote-author-txt {
+     color: #333;
+     font-family: Nunito Sans;
+     font-size: 18px;
+     font-weight: 300;
+     line-height: 23px;
+     margin-top: 10px;
+}
+/* PAGE CONTENT CONTAINERS */
+ #cinnabar-content {
+     height: 100%;
+     float: left;
+     display: block;
+     width: 100%;
+     position: relative;
+     text-align: center;
+}
+ #waters-edge-content {
+     height: 100%;
+     float: left;
+     display: none;
+     width: 100%;
+     position: relative;
+     text-align: center;
+}
+ #elements-content {
+     height: 100%;
+     float: left;
+     display: none;
+     width: 100%;
+     position: relative;
+     text-align: center;
+}
+ #fifth-avenue-content {
+     height: 100%;
+     float: left;
+     display: none;
+     width: 100%;
+     position: relative;
+     text-align: center;
+}
+/* NAV */
+ .trends-title-buttons {
+     display: block;
+     float: left;
+     width: 100%;
+}
+ .button {
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     cursor: pointer;
+     float: left;
+     position: relative;
+     text-align: center;
+     width: 25%;
+}
+ .button h2 {
+     color: #fff;
+     display: block;
+     font-family: Patua One;
+     font-size: 25px;
+     font-weight: 300;
+     height: 100%;
+     line-height: 29px;
+     margin: 30px;
+     padding: 10px;
+     transition: all 0.2s ease 0s;
+}
+ .button:hover >
+ h2 {
+     margin: 0;
+     padding: 40px 10px;
+     transition: all 0.3s ease 0s;
+}
+ .white-bar {
+     position:absolute;
+     bottom:0;
+     left: 0;
+     width:100%;
+     height: 8px;
+     background-color:#fff;
+}
+ .cinnabar-one-btn:hover >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .cinnabar-one-btn-active >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .waters-edge-two-btn:hover >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .waters-edge-two-btn-active >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .elements-three-btn-active >
+ .white-bar {
+     height: 0;
+}
+ .elements-three-btn:hover >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .fifth-avenue-four-btn-active >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .fifth-avenue-four-btn:hover >
+ .white-bar {
+     transition: all 0.35s ease 0s;
+     height: 0;
+}
+ .cinnabar-one-btn {
+     background-color: #e3e1db;
+     border-right: 8px solid #fff;
+}
+ .cinnabar-one-btn h2 {
+     background-color: #c86c62;
+}
+ .cinnabar-one-btn-active {
+     background-image: none;
+     background-color: rgba(200,108,98,1);
+}
+ .cinnabar-one-btn-active >
+ h2 {
+     background-color: rgba(0,0,0,0);
+}
+ .waters-edge-two-btn {
+     background-image: url("images/trends_ss19_waters_edge_top_nav_bkgd.jpg?qlt=75");
+     border-right: 8px solid #fff;
+}
+ .waters-edge-two-btn h2 {
+     background-color: #929d9d;
+}
+ .waters-edge-two-btn-active {
+     background-image: none;
+     background-color: rgba(146,157,157,1);
+}
+ .waters-edge-two-btn-active >
+ h2 {
+     background-color: rgba(0,0,0,0);
+}
+ .elements-three-btn {
+     background-image: url("images/trends_ss19_elements_top_nav_bkgd.jpg?qlt=76");
+     border-right: 8px solid #fff;
+}
+ .elements-three-btn h2 {
+     background-color: #9b9b34;
+}
+ .elements-three-btn-active {
+     background-image: none;
+     background-color: rgba(155,155,52,1);
+}
+ .elements-three-btn-active >
+ h2 {
+     background-color: rgba(0,0,0,0);
+}
+ .fifth-avenue-four-btn {
+     background-image: url("images/trends-ss19-fifth-avenue-top-nav-bkgd.jpg?qlt=75");
+}
+ .fifth-avenue-four-btn h2 {
+     background-color: #035945;
+}
+ .fifth-avenue-four-btn h2 br {
+     display: none;
+}
+ .fifth-avenue-four-btn-active {
+     background-image: none;
+     background-color: rgba(3,89,69,1);
+}
+ .fifth-avenue-four-btn-active >
+ h2 {
+     background-color: rgba(0,0,0,0);
+}
+ @media screen and (max-width: 1000px) {
+    /* TREND TITLE BANNER */
+     .hero-banner-intro-txt-container {
+         padding: 30px 5%;
+         margin-bottom: 30px;
+    }
+     #hero-banner-intro-txt-cinnabar img {
+         width: 225px;
+    }
+     #hero-banner-intro-txt-waters-edge img {
+         width: 320px;
+    }
+     #hero-banner-intro-txt-elements img {
+         width: 200px;
+    }
+     #hero-banner-intro-txt-fifth-avenue img {
+         width: 225px;
+    }
+     .hero-banner-intro-txt p {
+         font-size: 15px;
+         line-height: 20px;
+         max-width: initial;
+    }
+     .hero-banner-intro-txt h4 strong {
+         font-size: 13px;
+         line-height: 18px;
+         padding: 9px 15px 8px 16px;
+    }
+    /* ROOM TITLE BANNER */
+     .content-row-half-img {
+         background-size: 55%;
+    }
+     .content-row-half-txt {
+         width: 45%;
+         padding: 20px 15px 20px 35px;
+    }
+     .content-row-half-txt h4 {
+         margin-bottom: 25px;
+    }
+     .content-row-half-txt-palette-circle {
+         height: 45px;
+         width: 45px;
+    }
+    /* PRODUCT SEGMENT */
+     .room-section-container-big-thumb-container {
+         margin-top: 0;
+    }
+     .room-section-container-big-thumb {
+         height: 525px;
+    }
+    /* DESIGNER QUOTE */
+     .designer-quote {
+         width: 95%;
+         margin: 25px 2.5% 45px;
+    }
+     .designer-quote img {
+         margin-right: 25px;
+         width: 125px;
+    }
+     .designer-quote-script-txt {
+         font-family: Marck Script;
+         font-size: 24px;
+         line-height: 29px;
+    }
+     .designer-quote-author-txt {
+         font-size: 16px;
+         line-height: 21px;
+         margin-top: 10px;
+    }
+    /* NAV */
+     .button h2 {
+         margin: 30px 14px;
+    }
+    /*.elements-three-btn h2 {
+         margin: 30px 10px;
+    }
+     .fifth-avenue-four-btn h2 {
+         margin: 30px 10px;
+    }
+    */
+}
+ @media screen and (max-width: 810px) {
+     .trends-main-container {
+         margin-bottom: 70px;
+    }
+    /* TITLE */
+     .trends-title h2 {
+         font-size: 46px;
+         line-height: 60px;
+         margin-bottom: 0;
+    }
+     .trends-title h3 {
+         font-size: 30px;
+         line-height: 35px;
+         margin-bottom: 7px;
+    }
+     .trends-title p {
+         font-size: 14px;
+         line-height: 19px;
+    }
+     .trends-title p br {
+         display: block;
+    }
+    /* TREND TITLE BANNER */
+     .hero-banner-intro-txt p {
+         font-size: 14px;
+         line-height: 19px;
+         margin-bottom: 25px;
+    }
+     .hero-banner h3 {
+         font-family: Patua One;
+         font-size: 24px;
+         line-height: 29px;
+         font-weight: 300;
+    }
+    /* PRODUCT SEGMENT */
+     .room-section-container {
+         width: 100%;
+         margin: 0 auto;
+    }
+     .room-section-container p {
+         font-size: 14px;
+         line-height: 19px;
+    }
+     .room-section-container-big-thumb-container {
+         width: 60%;
+         margin-top: 15px;
+    }
+     .room-section-container-big-thumb-container h4 strong {
+         border: 1px solid #333;
+         font-size: 13px;
+         line-height: 18px;
+         padding: 9px 21px 8px 23px;
+    }
+    /* DESIGNER QUOTE */
+     .designer-quote {
+         width: 95%;
+         margin: 25px 2.5% 30px;
+    }
+     .designer-quote img {
+         margin-right: 15px;
+         width: 120px;
+    }
+     .designer-quote-script-txt {
+         font-family: Marck Script;
+         font-size: 21px;
+         line-height: 26px;
+    }
+     .designer-quote-author-txt {
+         font-size: 15px;
+         line-height: 20px;
+         margin-top: 8px;
+    }
+    /* NAV */
+     .button h2 {
+         font-size: 21px;
+         font-weight: 300;
+         line-height: 26px;
+         margin: 10px 0 17px 0;
+         padding: 10px 5px;
+    }
+     .button:hover >
+     h2 {
+         padding: 20px 5px 27px;
+    }
+}
+ @media screen and (max-width: 580px) {
+    /* GENERAL STYLES */
+     .desk-only {
+         display: none;
+    }
+     .mob-only {
+         display: block;
+    }
+    /* TREND TITLE BANNER */
+     .hero-banner-intro-img {
+         padding: 0;
+         width: 100%;
+    }
+     .hero-banner-intro-img img {
+         max-width: initial;
+         width: 100%;
+    }
+     .hero-banner-intro-txt-container {
+         width: 100%;
+         padding: 40px 15px;
+    }
+     .hero-banner-intro-txt {
+         padding: 12px 25px 25px;
+         margin-top: -100px;
+    }
+     #hero-banner-intro-txt-cinnabar img {
+         width: 200px;
+    }
+     #hero-banner-intro-txt-waters-edge img {
+         width: 250px;
+    }
+     #hero-banner-intro-txt-elements img {
+         width: 175px;
+    }
+     #hero-banner-intro-txt-fifth-avenue img {
+         width: 200px;
+    }
+     .hero-banner-intro-txt p {
+         margin-bottom: 25px;
+    }
+     .hero-banner-intro-txt {
+         padding: 12px 15px 25px;
+    }
+    /* PRODUCT SEGMENT */
+     .room-section-container-three-thumbs-container {
+         width: 100%;
+         position: relative;
+         margin-bottom: 65px;
+    }
+     .room-section-container-product-text p {
+         padding: 0 1%;
+         position: absolute;
+         top: 80%;
+         width: 33%;
+    }
+     .room-section-container-thumb {
+         width: 31%;
+         margin-right: 3.5%;
+         margin-top: 20px;
+         margin-bottom: 20px;
+    }
+     a:nth-child(3n+3) .room-section-container-thumb {
+         margin-right: 0;
+    }
+     .room-section-container-thumb img {
+         padding: 15px;
+         width: 100%;
+    }
+     .room-section-container-big-thumb-container {
+         width: 90%;
+         margin: 0 5% 0 5%;
+    }
+     .room-section-container-big-thumb-script-text {
+         color: #333;
+         background-color: rgba(255, 255, 255, 0.65);
+         padding: 10px 20px;
+         margin-top: 0;
+         max-width: initial;
+         width: 100%;
+         position: absolute;
+         right: 0;
+         left: 0;
+         bottom:0;
+         top: initial;
+         text-shadow: none;
+    }
+     .room-section-container-big-thumb-container h4 {
+         margin: 25px 0 0 0;
+    }
+    /* DESIGNER QUOTE */
+     .designer-quote {
+         width: 95%;
+         margin: 25px 2.5% 20px;
+    }
+     .designer-quote img {
+         float: initial;
+         margin: 0 auto;
+    }
+    /* NAV */
+     .button {
+         width: 48.5%;
+         border: none;
+    }
+     .button h2 {
+         display: inline-block;
+         margin: 15px 0;
+         padding: 10px;
+    }
+     .button:hover >
+     h2 {
+         margin: 15px 0;
+         padding: 10px 15px;
+    }
+     .white-bar {
+         display: none;
+    }
+     .cinnabar-one-btn, .elements-three-btn {
+         margin-right: 2.5%;
+         margin-bottom: 15px;
+    }
+}
+ @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+     .cinnabar-one-btn:hover >
+     .button-triangle {
+         color:white;
+         transition:all 0s ease 0s;
+         margin-bottom:-25px;
+    }
+     .cinnabar-one-btn-active >
+     .button-triangle {
+         color:white;
+         margin-bottom:-25px;
+    }
+     .waters-edge-two-btn:hover >
+     .button-triangle {
+         color:white;
+         transition:all 0s ease 0s;
+         margin-bottom:-25px;
+    }
+     .waters-edge-two-btn-active >
+     .button-triangle {
+         color:white;
+         margin-bottom:-25px;
+    }
+     .elements-three-btn:hover >
+     .button-triangle {
+         color:white;
+         transition:all 0s ease 0s;
+         margin-bottom:-25px;
+    }
+     .elements-three-btn-active >
+     .button-triangle {
+         color:white;
+         margin-bottom:-25px;
+    }
+     .fifth-avenue-four-btn:hover >
+     .button-triangle {
+         color:white;
+         transition:all 0s ease 0s;
+         margin-bottom:-25px;
+    }
+     .fifth-avenue-four-btn-active >
+     .button-triangle {
+         color:white;
+         margin-bottom:-25px;
+    }
+}
+ </style>
+
+
+   
+   </head>
+	
+
+
+
+
+<body>
+
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="trends-main-container">
+ 
+
+
+
+<div class="trends-nav-container">
+
+
+
+<div class="trends-title-container">
+
+<div class="trends-title">
+
+<h2>Trends</h2>
+
+<h3>Spring Summer</h3>
+
+<p>Find your new season look, from Palm Springs luxury to <br>quaint riverside calm, intricate mandala prints to 70's curves</p>
+
+</div>
+
+
+
+
+</div>
+
+
+
+
+<div class="trends-title-buttons">
+
+
+
+
+<div class="button cinnabar-one-btn cinnabar-one-btn-active">
+
+<h2>Cinnabar</h2>
+<div class="white-bar">
+</div>
+
+</div>
+
+ 
+ 
+
+<div class="button waters-edge-two-btn">
+
+<h2>Water's Edge</h2>
+<div class="white-bar">
+</div>
+  
+</div>
+
+
+
+
+<div class="button elements-three-btn">
+
+<h2>Elements</h2>
+  <div class="white-bar">
+</div></div> 
+ 
+
+
+
+<div class="button fifth-avenue-four-btn">
+
+<h2>Fifth<br> Avenue</h2>
+<div class="white-bar">
+</div>
+
+</div> 
+
+
+  
+
+</div>
+
+
+
+
+
+  
+  
+</div>
+
+
+<div class="trends-title-container-bkgd">
+  
+</div>
+
+
+
+
+
+
+
+
+
+<!------------- 1 CINNABAR MAIN CONTENT -------------> 
+    
+<div id="cinnabar-content" style="display: block;">
+
+
+<div class="content-container"> 
+
+
+
+
+<!-- HERO BANNER --> 
+
+<div class="hero-banner-container">
+<a>
+<div class="hero-banner" style="border-top: #c86c62 solid 10px;"> 
+
+
+<div class="hero-banner-intro-img">
+
+<img src="images/trends-ss19-cinnabar-main-hero.jpg">
+  
+</div>
+
+  
+<div class="hero-banner-intro-txt-container" id="hero-banner-intro-txt-container-cinnabar"> 
+
+
+<div class="hero-banner-intro-txt" id="hero-banner-intro-txt-cinnabar"> 
+  
+<img src="images/trends-ss19-cinnabar-logo.png">
+  
+<p>Globally inspired with a laidback feel, this delicately detailed 
+trend is influenced by striking mandala patterns with beading and 
+metallic highlights on a warm palette.</p>
+
+<h4><strong>Shop the look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+
+</div>
+
+
+</div>  
+  
+<h3 id="hero-banner-txt-cinnabar">Create The Look</h3>
+
+  
+</div>
+</a>
+</div>
+
+
+
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+
+
+<div class="room-section-big-thumb-holder">
+  
+  <div class="room-section-container-big-thumb-script-text room-script-cinnabar-top">
+Complete the look with accessories inspired by world travel 
+</div>
+
+<img src="images/trends-ss19-cinnabar-bedroom-hero.jpg">
+  
+</div>
+
+<p>Carys Blush Duvet Cover and Pillowcase Set <strong>From £28 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-cinnabar-bedroom-prod1.jpg">
+<p>Fitzgerald Nightstand<strong>£119 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-cinnabar-bedroom-prod2.jpg">
+<p>Buddha Hand Tealight Holder<strong>£3.50 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-cinnabar-bedroom-prod3.jpg">
+<p>Cinnabar Natural Woven Throw<strong>£30 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+</div>
+
+
+
+
+
+
+<!-- DESIGNER QUOTE --> 
+
+
+<div class="designer-quote"> 
+  
+  
+<img src="images/trends-ss19-designer-debbie-portrait.jpg">
+
+<div class="designer-quote-script-txt">"Texture is just as important as pattern, and this look mixes them up and layers them together."</div>
+
+
+<div class="designer-quote-author-txt">
+  Debbie Drake - Head of Design
+
+
+</div>
+
+  
+</div>
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-cinnabar-kitchen-prod1.jpg">
+<p>Cinnabar 12 Piece Dinner Set<strong>£45 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-cinnabar-kitchen-prod2.jpg">
+<p>Mandala Serving Platter<strong>£14 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-cinnabar-kitchen-prod3.jpg">
+<p>Elephant Napkin Rings<strong>£8 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+<div class="room-section-big-thumb-holder">
+
+<div class="room-section-container-big-thumb-script-text room-script-cinnabar-bottom">
+Intricate mandala patterns give a beautiful and highly decorative effect 
+</div>
+
+<img src="images/trends-ss19-cinnabar-kitchen-hero.jpg">
+
+</div>
+
+
+
+<p>Cinnabar Dining Collection <strong>From £3 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>  
+   
+
+
+<!----------- END: 1 CINNABAR MAIN CONTENT -----------> 
+
+
+
+
+
+
+
+
+
+
+
+<!------------- 2 WATER'S EDGE MAIN CONTENT -------------> 
+    
+<div id="waters-edge-content" style="display: none;">
+
+
+<div class="content-container"> 
+
+
+
+
+
+
+<!-- HERO BANNER --> 
+
+<div class="hero-banner-container">
+<a>
+<div class="hero-banner" style="background-image: url(images/trends-ss19-waters-edge-hero-bkgd.jpg?qlt=75); border-top: #929d9d solid 10px;">
+
+
+<div class="hero-banner-intro-img">
+
+<img src="images/trends-ss19-waters-edge-main-hero.jpg">
+  
+</div>
+
+  
+<div class="hero-banner-intro-txt-container" id="hero-banner-intro-txt-container-waters-edge"> 
+
+
+<div class="hero-banner-intro-txt" id="hero-banner-intro-txt-waters-edge"> 
+  
+<img src="images/trends-ss19-waters-edge-logo.png">
+  
+<p>A modern country look inspired by riverside flora and fauna, this 
+tranquil trend makes use of organic shapes, natural fibres, water glazes
+ and otter motifs.</p>
+
+<h4><strong>Shop the look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+
+</div>
+
+
+</div>  
+  
+<h3 id="hero-banner-txt-waters-edge">Create The Look</h3>
+
+  
+</div>
+</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+
+
+<div class="room-section-big-thumb-holder">
+  
+  <div class="room-section-container-big-thumb-script-text room-script-waters-edge-top">
+Our cute otter cushion and table lamp makes coordination easy
+</div>
+
+<img src="images/trends-ss19-waters-edge-living-hero.jpg">
+  
+</div>
+
+<p>Cushions <strong>From £8 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-waters-edge-living-prod1.jpg">
+<p>Tilly Otter Lamp<strong>£35 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-waters-edge-living-prod2.jpg">
+<p>Grey Otter Cushion<strong>£12 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-waters-edge-living-prod3.jpg">
+<p>Compton Ivory Coffee Table<strong>£249 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- DESIGNER QUOTE --> 
+
+
+<div class="designer-quote"> 
+  
+  
+<img src="images/trends-ss19-designer-debbie-portrait.jpg">
+
+<div class="designer-quote-script-txt">"Easy going and relaxed, painted wood blends with cane and wicker accents to give a modern country feel."</div>
+
+
+<div class="designer-quote-author-txt">
+  Debbie Drake - Head of Design
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-waters-edge-bedroom-prod1.jpg">
+<p>Lari Rattan Dome Pendant<strong>£29 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-waters-edge-bedroom-prod2.jpg">
+<p>Casual Stripe Cushion<strong>£8 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-waters-edge-bedroom-prod3.jpg">
+<p>Lynton 5 Drawer Chest<strong>£179 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+<div class="room-section-big-thumb-holder">
+
+<div class="room-section-container-big-thumb-script-text room-script-waters-edge-bottom">
+Recycled glass, natural fibres and painted furniture add to this calm style
+</div>
+
+<img src="images/trends-ss19-waters-edge-bedroom-hero.jpg">
+
+</div>
+
+
+
+<p>Cornflower Jacquard Blue Duvet Cover Set <strong>From £40 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div> 
+
+
+<!----------- END: 2 WATER'S EDGE MAIN CONTENT -----------> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------- 3 ELEMENTS MAIN CONTENT -------------> 
+    
+<div id="elements-content" style="display: none;">
+
+ 
+ 
+<div class="content-container"> 
+
+
+
+
+
+
+<!-- HERO BANNER --> 
+
+<div class="hero-banner-container">
+<a>
+<div class="hero-banner" style="background-image: url(images/trends-ss19-elements-hero-bkgd.jpg?qlt=75); border-top: #9b9b34 solid 10px;">
+
+
+<div class="hero-banner-intro-img">
+
+<img src="images/trends-ss19-elements-hero-main.jpg">
+  
+</div>
+
+  
+<div class="hero-banner-intro-txt-container" id="hero-banner-intro-txt-container-elements"> 
+
+
+<div class="hero-banner-intro-txt" id="hero-banner-intro-txt-elements"> 
+  
+<img src="images/trends-ss19-elements-logo.png">
+  
+<p>Explore earthy colours, stained timber, graphic prints and carefully 
+placed curves that are straight from the 1970's in our Elements seasonal
+ refresh.</p>
+
+<h4><strong>Shop the look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+
+</div>
+
+
+</div>  
+  
+<h3 id="hero-banner-txt-elements">Create The Look</h3>
+
+  
+</div>
+</a>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+
+
+<div class="room-section-big-thumb-holder">
+  
+  <div class="room-section-container-big-thumb-script-text room-script-elements-top">
+Pops of burnt orange and olive green add warmth to a neutral backdrop
+</div>
+
+<img src="images/trends-ss19-elements-living-hero.jpg">
+  
+</div>
+
+<p>Prague 3 Seater Sofa <strong>£349 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-elements-living-prod1.jpg">
+<p>Elements Roots Stripe Cushion<strong>£16 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-elements-living-prod2.jpg">
+<p>Zebra Resin Sculpture<strong>£14 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-elements-living-prod3.jpg">
+<p>Breckon Stripe Throw<strong>£30 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- DESIGNER QUOTE --> 
+
+
+<div class="designer-quote"> 
+  
+  
+<img src="images/trends-ss19-designer-debbie-portrait.jpg">
+
+<div class="designer-quote-script-txt">"1970's crafting influences decorative pieces from macramé plant hangers to stylised graphic prints."</div>
+
+
+<div class="designer-quote-author-txt">
+  Debbie Drake - Head of Design
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-elements-bathroom-prod1.jpg">
+<p>Elements Tribe Wall Hooks<strong>£12 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-elements-bathroom-prod2.jpg">
+<p>Jackson Ochre Laundry Hamper<strong>£20 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-elements-bathroom-prod3.jpg">
+<p>Elements Emmott Grey Towel<strong>From £6 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+<div class="room-section-big-thumb-holder">
+
+<div class="room-section-container-big-thumb-script-text room-script-elements-bottom">
+Influenced by the natural world, we've introduced stylised birds and flowers 
+</div>
+
+<img src="images/trends-ss19-elements-bathroom-hero.jpg">
+
+</div>
+
+
+
+<p>Elements Matt Black Bathroom Collection <strong>From £5 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+</div>
+
+<!----------- END: 3 ELEMENTS MAIN CONTENT -----------> 
+
+
+
+
+
+
+
+
+
+
+<!------------- 4 FIFTH AVENUE MAIN CONTENT -------------> 
+    
+<div id="fifth-avenue-content" style="display: none;">
+
+ 
+ 
+<div class="content-container"> 
+
+
+
+
+<!-- HERO BANNER --> 
+
+<div class="hero-banner-container">
+<a>
+<div class="hero-banner" style="background-image: url(images/trends-ss19-fifth-avenue-hero-bkgd.jpg?qlt=75); border-top: #035945 solid 10px;">
+
+
+<div class="hero-banner-intro-img">
+
+<img src="images/trends-ss19-fifth-avenue-main-hero.jpg">
+  
+</div>
+
+  
+<div class="hero-banner-intro-txt-container" id="hero-banner-intro-txt-container-fifth-avenue"> 
+
+
+<div class="hero-banner-intro-txt" id="hero-banner-intro-txt-fifth-avenue"> 
+  
+<img src="images/trends-ss19-fifth-avenue-logo.png">
+  
+<p>Inspired by glamorous Palm Springs homes, 5A has been given a 
+tropical luxe feel that's rich in metallic accents and teal touches, 
+with leopard and leaf motifs.</p>
+
+<h4><strong>Shop the look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+
+</div>
+
+
+</div>  
+  
+<h3 id="hero-banner-txt-fifth-avenue">Create The Look</h3>
+
+  
+</div>
+</a>
+</div>
+
+
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+
+
+<div class="room-section-big-thumb-holder">
+  
+  <div class="room-section-container-big-thumb-script-text room-script-5a-top">
+Complete the look with metallic accessories for a high end finish 
+</div>
+
+<img src="images/trends-ss19-fifth-avenue-living-hero-sofa.jpg">
+  
+</div>
+
+<p>Rupert 3 Seater Velvet Sofa <strong>£549 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-fifth-avenue-living-prod1.jpg">
+<p>Charter Marble Side Table<strong>£99 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-fifth-avenue-living-prod2.jpg">
+<p>5A Plum Bergen Animal Cushion<strong>£30 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-fifth-avenue-living-prod3.jpg">
+<p>5A Black Leopard Cushion<strong>£25 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- DESIGNER QUOTE --> 
+
+
+<div class="designer-quote"> 
+  
+  
+<img src="images/trends-ss19-designer-debbie-portrait.jpg">
+
+<div class="designer-quote-script-txt">"Smart and glamorous, the combination of rich bottle green, shimmering neutrals, and lush foliage is ultra-fashionable."</div>
+
+
+<div class="designer-quote-author-txt">
+  Debbie Drake - Head of Design
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+
+
+<!-- PRODUCT SEGMENT --> 
+
+
+<div class="room-section-container"> 
+
+
+
+
+<div class="room-section-container-three-thumbs-container"> 
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-fifth-avenue-bedroom-prod1.jpg">
+<p>5A Flare Teal Lustre Vase<strong>£12 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-fifth-avenue-bedroom-prod2.jpg">
+<p>5A Decorative Gold Tray<strong>£29 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+<a>
+<div class="room-section-container-thumb room-section-container-product-text"> 
+
+<img src="images/trends-ss19-fifth-avenue-bedroom-prod3.jpg">
+<p>Harriet Mirrored Dressing Table<strong>£399 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</div>
+</a>
+
+
+</div>
+
+
+
+
+<div class="room-section-container-big-thumb-container"> 
+<a>
+
+<div class="room-section-big-thumb-holder">
+
+<div class="room-section-container-big-thumb-script-text room-script-5a-bottom">
+Strong pops of colour look smart and sophisticated in a monochrome setting 
+</div>
+
+<img src="images/trends-ss19-fifth-avenue-bedroom-hero.jpg">
+
+</div>
+
+
+
+<p>5A Yara Duvet Cover Set <strong>From £50 <span data-icon="" style="font-size: 75%;"></span></strong></p>
+
+</a>
+
+<a>
+<h4><strong>Shop the Look <span data-icon="" style="font-size: 75%;"></span></strong></h4>
+</a>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+</div>
+ 
+
+   
+</div>
+
+<!----------- END: 4 FIFTH AVENUE MAIN CONTENT -----------> 
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+
+
+	
+</html>
