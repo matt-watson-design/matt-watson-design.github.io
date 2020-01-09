@@ -661,6 +661,7 @@ body.is-preload #header.alt .logo {
 	background-color: #ffffff;
 	color: #636363;
 	border-radius: 0.25em;
+    float: left;
 }
 
 #main h2 {
@@ -712,6 +713,8 @@ body.is-preload #header.alt .logo {
 #main>.main {
 	padding: 5em 5em 3em 5em;
 	border-bottom: solid 1px #dddddd;
+    float: left;
+    width: 100%;
 }
 
 #main>.main:last-child {
@@ -884,21 +887,29 @@ body.is-preload #header.alt .logo {
 }
 
 .portfolio-txt-dscrp-artwrk-container {
-	display: inline-flex;
+    /* display: inline-flex; */ 
 }
 
 .portfolio-container-txt-dscrp {
 	text-align: left;
 	width: 50%;
 	padding-right: 1em;
+    float: left;
 }
 
 .portfolio-container-txt-dscrp p {
 	margin-bottom: 1.25em;
 }
 
+.portfolio-container-txt-dscrp-full {
+	text-align: left;
+	width: 100%;
+    float: left;
+}
+
 .portfolio-container-artwrk {
 	width: 50%;
+    float: left;
 }
 
 .portfolio-container-artwrk img{
@@ -908,6 +919,7 @@ body.is-preload #header.alt .logo {
 .portfolio-container-skills-tools {
 	border-top: 1px solid #dddddd;
 	margin-top: 2em;
+    float: left;
 }
 
 .portfolio-container-skills-tools h3 {
@@ -996,7 +1008,7 @@ header.major h2:after {
 .back-tab:hover {
     padding: 0 1.25em 0 0.75em;
 }
-
+}
 
 @media screen and (max-width: 640px) {
 
@@ -1012,6 +1024,32 @@ header.major h2:after {
 
 
 }
+
+
+
+
+
+.portfolio-container-vids-double {
+    float: left;
+    text-align: center;
+    width: 100%;
+}
+
+.portfolio-container-vids-double-block {
+    float: left;
+    width: 50%;
+}
+
+.portfolio-container-vids-double-block video {
+    width: 250px;
+}
+
+
+
+
+
+
+
 
 
 
