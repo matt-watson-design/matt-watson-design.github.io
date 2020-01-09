@@ -905,6 +905,11 @@ body.is-preload #header.alt .logo {
 	text-align: left;
 	width: 100%;
     float: left;
+    margin-bottom: 1.25em;
+}
+
+.portfolio-container-txt-dscrp-full p {
+	margin-bottom: 1.25em;
 }
 
 .portfolio-container-artwrk {
@@ -946,6 +951,10 @@ body.is-preload #header.alt .logo {
 
 .portfolio-container-txt-dscrp p {
     text-align: left;
+}
+
+.portfolio-container-txt-dscrp-full {
+    text-align: center;
 }
 
 .portfolio-container-artwrk {
@@ -1041,14 +1050,74 @@ header.major h2:after {
 }
 
 .portfolio-container-vids-double-block video {
-    width: 250px;
+    cursor: pointer;
+    max-width: 300px;
+    width: 85%;
+}
+
+.portfolio-container-vids-triple-block {
+    float: left;
+    width: 33.33333%;
+}
+
+.portfolio-container-vids-triple-block video {
+    cursor: pointer;
+    max-width: 300px;
+    width: 85%;
 }
 
 
 
 
+@media screen and (max-width: 650px) {
+
+.portfolio-container-vids-triple-block {
+    float: left;
+    width: 50%;
+    margin-bottom: 1.5em;
+}
+
+.portfolio-container-vids-triple-block:last-child {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.portfolio-container-vids-triple-block video {
+    max-width: 160px;
+    width: 90%;
+}
+
+}
 
 
+@media screen and (max-width: 480px) {
+
+.portfolio-container-vids-double-block {
+    width: 100%;
+}
+
+.portfolio-container-vids-double-block:first-child {
+    margin-bottom: 1.5em;
+}
+
+.portfolio-container-vids-double-block video {
+    max-width: none;
+    width: 90%;
+}
+
+.portfolio-container-vids-triple-block {
+    float: left;
+    width: 100%;
+}
+
+.portfolio-container-vids-triple-block video {
+    max-width: none;
+    width: 80%;
+}
+
+
+}
 
 
 
