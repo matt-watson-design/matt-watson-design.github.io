@@ -711,7 +711,7 @@ body.is-preload #header.alt .logo {
 }
 
 #main>.main {
-	padding: 5em 5em 3em 5em;
+	padding: 3em 5em;
 	border-bottom: solid 1px #dddddd;
     float: left;
     width: 100%;
@@ -887,7 +887,7 @@ body.is-preload #header.alt .logo {
 }
 
 .portfolio-txt-dscrp-artwrk-container {
-    /* display: inline-flex; */ 
+    width: 100%; 
 }
 
 .portfolio-container-txt-dscrp {
@@ -925,6 +925,7 @@ body.is-preload #header.alt .logo {
 	border-top: 1px solid #dddddd;
 	margin-top: 2em;
     float: left;
+    width: 100%;
 }
 
 .portfolio-container-skills-tools h3 {
