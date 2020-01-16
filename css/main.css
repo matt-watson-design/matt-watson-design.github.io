@@ -289,7 +289,7 @@ header.major h2:after {
 
 
 
-/* Portfolio */
+/* HP - Portfolio Section */
 
 .portfolio {
 	display: -moz-flex;
@@ -361,6 +361,108 @@ header.major h2:after {
 		margin-top: 2em;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HP - Portfolio Section Hover Effects */
+
+ .portfolio-img-container {
+     position: relative;
+}
+ .portfolio-img {
+     opacity: 1;
+     display: block;
+     width: 100%;
+     height: auto;
+     transition: .5s ease;
+     backface-visibility: hidden;
+}
+ .portfolio-img-hover {
+     transition: .5s ease;
+     opacity: 0;
+     position: absolute;
+     top: 0;
+     left: 0;
+     text-align: center;
+     padding: 40px 0;
+     width: 100%;
+}
+ .portfolio-img-hover img {
+     max-width: 120px;
+     padding: 10px;
+     margin-left: auto;
+     margin-right: auto;
+     /*background-color: rgba(255, 255, 255, 0.85);*/
+     border-radius: 50%;
+}
+ .portfolio-img-hover > .button:hover{
+     background-color: #34495e;
+}
+ .portfolio-img-container:hover .portfolio-img {
+     opacity: 0.2;
+}
+ .portfolio-img-container:hover .portfolio-img-hover {
+     opacity: 1;
+}
+
+
+
+@media screen and (max-width: 1040px) {
+
+.portfolio-img-hover {
+    padding: 20px 0;
+}
+
+}
+
+@media screen and (max-width: 880px) {
+
+.portfolio-img-hover {
+    padding: 0;
+}
+
+}
+
+@media screen and (max-width: 768px) {
+
+.portfolio-img-hover {
+    padding: 50px 0;
+}
+
+}
+
+@media screen and (max-width: 680px) {
+
+.portfolio-img-hover {
+    padding: 25px 0;
+}
+
+}
+
+
+@media screen and (max-width: 580px) {
+
+.portfolio-img-hover {
+   display:  none;
+}
+ .portfolio-img-container:hover .portfolio-img {
+     opacity: 1;
+}
+
+}
+
+
+
 
 
 
