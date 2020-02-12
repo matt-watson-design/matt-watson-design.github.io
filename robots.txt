@@ -1,14 +1,14 @@
 # Disallow
 User-agent: Googlebot
-Disallow: https://mattwatson.design/portfolio/fogarty/fogarty-demo
-Disallow: https://mattwatson.design/portfolio/fogarty/fogarty-mattresses
-Disallow: https://mattwatson.design/portfolio/fogarty/fogarty-duvets
-Disallow: https://mattwatson.design/portfolio/fogarty/fogarty-pillows
-Disallow: https://mattwatson.design/portfolio/fogarty/fogarty-protectors-toppers
-Disallow: https://mattwatson.design/portfolio/fogarty/fogarty-bedding
-Disallow: https://mattwatson.design/portfolio/sleep-zone/sleep-zone-demo
-Disallow: https://mattwatson.design/portfolio/sleep-zone/sleep-zone-demo-mob-slider-iframe
-Disallow: https://mattwatson.design/portfolio/trends/trends-demo
+Disallow: /portfolio/fogarty/fogarty-demo
+Disallow: /portfolio/fogarty/fogarty-mattresses
+Disallow: /portfolio/fogarty/fogarty-duvets
+Disallow: /portfolio/fogarty/fogarty-pillows
+Disallow: /portfolio/fogarty/fogarty-protectors-toppers
+Disallow: /portfolio/fogarty/fogarty-bedding
+Disallow: /portfolio/sleep-zone/sleep-zone-demo
+Disallow: /portfolio/sleep-zone/sleep-zone-demo-mob-slider-iframe
+Disallow: /portfolio/trends/trends-demo
 
 # Allow
 User-agent: *
