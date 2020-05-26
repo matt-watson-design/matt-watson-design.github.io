@@ -1182,10 +1182,20 @@ header.major h2:after {
 
 
 
-.portfolio-container-vids-double {
+.portfolio-container-vids-all {
     float: left;
     text-align: center;
     width: 100%;
+}
+
+.portfolio-container-vids-single-block {
+    float: left;
+    width: 100%;
+}
+
+.portfolio-container-vids-single-block video {
+    cursor: pointer;
+    width: 75%;
 }
 
 .portfolio-container-vids-double-block {
@@ -1236,6 +1246,10 @@ header.major h2:after {
 
 
 @media screen and (max-width: 480px) {
+
+.portfolio-container-vids-single-block video {
+    width: 90%;
+}
 
 .portfolio-container-vids-double-block {
     width: 100%;
