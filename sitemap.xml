@@ -7,42 +7,53 @@
 
 <url>
   <loc>https://mattwatson.design/</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://mattwatson.design/portfolio/fogarty/fogarty</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mattwatson.design/portfolio/sleep-zone/sleep-zone</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mattwatson.design/portfolio/trends/trends</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
-  <priority>0.80</priority>
-</url>
-<url>
-  <loc>https://mattwatson.design/portfolio/replatform/replatform</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <loc>https://mattwatson.design/portfolio/equality-legislation-elearning</loc>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mattwatson.design/portfolio/replatform-demo/replatform-demo</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mattwatson.design/portfolio/product-animation/product-animation</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <loc>https://mattwatson.design/portfolio/data-protection-elearning</loc>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mattwatson.design/portfolio/trends/trends</loc>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://mattwatson.design/portfolio/competition-law-elearning</loc>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://mattwatson.design/portfolio/christmas-trends/christmas-trends</loc>
-  <lastmod>2022-01-01T12:00:00+00:00</lastmod>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
   <priority>0.80</priority>
 </url>
+<url>
+  <loc>https://mattwatson.design/portfolio/food-allergies</loc>
+  <lastmod>2022-12-12T12:00:00+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
 </urlset>
