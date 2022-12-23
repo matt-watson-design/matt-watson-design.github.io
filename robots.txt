@@ -9,6 +9,7 @@ Disallow: /portfolio/fogarty/fogarty-bedding
 Disallow: /portfolio/sleep-zone/sleep-zone-demo
 Disallow: /portfolio/sleep-zone/sleep-zone-demo-mob-slider-iframe
 Disallow: /portfolio/trends/trends-demo
+Disallow: /404
 
 # Allow
 User-agent: *

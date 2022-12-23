@@ -1005,14 +1005,28 @@ body.is-preload #header.alt .logo {
 
 
 
-
-
 /* Contact Btn */
 
 .contact-btn {
     margin-top: 1.25em;
 }
 
+
+
+
+
+
+
+/* 404 page */
+
+#four-zero-four-custom {
+    text-align: center;
+    margin-top: 2em;
+}
+
+#four-zero-four-custom h2:after {
+	  margin: 0.3em auto 1em auto;
+}
 
 
 
