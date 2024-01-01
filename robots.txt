@@ -9,6 +9,20 @@ Disallow: /portfolio/fogarty/fogarty-bedding
 Disallow: /portfolio/sleep-zone/sleep-zone-demo
 Disallow: /portfolio/sleep-zone/sleep-zone-demo-mob-slider-iframe
 Disallow: /portfolio/trends/trends-demo
+Disallow: /portfolio/sleep-zone/images/sleep-zone-web-banners.jpg
+Disallow: /portfolio/images/hp-portfolio-christmas-trends.jpg
+Disallow: /portfolio/images/hp-portfolio-competition-law.jpg
+Disallow: /portfolio/images/hp-portfolio-data-protection.jpg
+Disallow: /portfolio/images/hp-portfolio-equality-legislation.jpg
+Disallow: /portfolio/images/hp-portfolio-fogarty.jpg
+Disallow: /portfolio/images/hp-portfolio-food-allergies.jpg
+Disallow: /portfolio/images/hp-portfolio-replatform-demo.jpg
+Disallow: /portfolio/images/hp-portfolio-sleep-zone.jpg
+Disallow: /portfolio/images/hp-portfolio-trends.jpg
+Disallow: /portfolio/images/portfolio-fogarty-showcase.jpg
+Disallow: /portfolio/images/portfolio-sleep-zone-showcase.jpg
+Disallow: /portfolio/images/portfolio-trends-showcase.jpg
+
 Disallow: /404
 
 # Allow
